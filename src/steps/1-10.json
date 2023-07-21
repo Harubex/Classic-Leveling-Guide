@@ -1,0 +1,379 @@
+[{
+    "step": 1,
+    "text": "Accept [@quest=A Threat Within]. Delete your [@item=Hearthstone].",
+    "macros": [{
+        "title": "Heroic Strike Macro",
+        "text": "#showtooltip\n/startattack\n/cast Heroic Strike\n/stopcasting",
+        "class": "warrior"
+    }],
+    "coords": [-485.875, 561.84375]
+}, {
+    "step": 2,
+    "text": "Kill wolves, get [@money=10c] worth of trash (1-2 kills), vendor, go inside the abbey and turn in [@quest=A Threat Within].",
+    "coords": [-484.8125, 561.78125],
+    "special": "warrior"
+}, {
+    "step": 3,
+    "text": "Accept [@quest=Kobold Camp Cleanup], walk right to Warrior trainer, train [@move=Battle Shout]. Go out, accept [@quest=Eagan Peltskinner], turn it in at [@mob=Eagan Peltskinner]. Accept [@quest=Wolves Across the Border] and kill [@mob=Young Wolf]/[@mob=Kobold Vermin] as spawns permit. Focus on vermin. Kill other mobs while waiting.",
+    "coords": [-481.4375, 562.9375]
+}, {
+    "step": 4,
+    "text": "Vendor greys. Go turn in [@quest=Kobold Camp Cleanup], accept [@quest=Investigate Echo Ridge] and [@quest=Simple Letter]. You're probably not 4 yet, so leave.",
+    "coords": [-485.40625, 562.3125]
+}, {
+    "step": 5,
+    "text": "Go outside, accept [@quest=Brotherhood of Thieves]. Go do this quest for the weapon upgrade. These mobs are annoying at 3, use the food in your bags to get through them quicker.",
+    "coords": [-486.375, 569.71875]
+}, {
+    "step": 6,
+    "text": "Turn in [@quest=Brotherhood of Thieves], accept [@quest=Milly Osworth] and [@quest=Bounty on Garrick Padfoot], vendor old weapon and other garbage. If you're not 4 yet, grind until you're 4.",
+    "coords": [-486.25, 562.533383996561]
+}, {
+    "step": 7,
+    "text": "Go inside and turn in [@quest=Simple Letter], train [@move=Charge] and [@move=Rend] if you can afford it.",
+    "note": "[@move=Rend] is worth using at this level. A full [@move=Rend] will deal more damage than a [@move=Heroic Strike] for 5 less rage. [@move=Rend] 1st global after charge, swap to another target if you want to for a 2nd [@move=Rend] to apply. Kill both together for better rage gen and more damage with 2 dots ticking.",
+    "macros": [{
+        "title": "Rend Macro",
+        "text": "#showtooltip\n/cast Rend\n/startattack",
+        "class": "warrior"
+    }, {
+        "title": "Charge Macro",
+        "text": "#showtooltip\n/cast Charge\n/startattack",
+        "class": "warrior"
+    }],
+    "coords": [-485.375, 564.21875],
+    "special": "warrior"
+}, {
+    "step": 8,
+    "text": "Go outside, turn in [@quest=Wolves Across the Border], kill Kobold Workers, working your way back to Milly. Once done, turn in [@quest=Milly Osworth], accept [@quest=Milly's Harvest].",
+    "coords": [-483.59375, 565.75]
+}, {
+    "step": 9,
+    "text": "Head across the river and pick up grapes. After you have grapes, go kill [@mob=Garrick Padfoot]. If needed, bind one of your /startattack macros to scroll wheel or something and spin it on his spawn to guarantee the tag.",
+    "coords": [-489.625, 570.21875]
+}, {
+    "step": 10,
+    "text": "Go turn in [@quest=Milly's Harvest], accept [@quest=Grape Manifest]. Go around and turn in [@quest=Bounty on Garrick Padfoot] outside and [@quest=Investigate Echo Ridge] inside. Accept [@quest=Skirmish at Echo Ridge], while inside go upstairs and turn in [@quest=Grape Manifest].",
+    "coords": [-483.875, 564.5625]
+}, {
+    "step": 11,
+    "text": "Go back outside and beat up [@mob=Kobold Laborers] in the mine. Grind mobs on your way back to turn in [@quest=Skirmish at Echo Ridge]. Accept [@quest=Report to Goldshire], leave Northshire, accept [@quest=Rest and Relaxation] on your way out.",
+    "coords": [-478, 561.71875]
+}, {
+    "step": 12,
+    "text": "Walk to Goldshire. You should be most of the way through 5. If you're not at 2415/2800, kill mobs on your way there until you are. The defias that drop linen are a good choice. By the time you vendor, you want to have at least [@money=3s10c].",
+    "coords": [-489.25, 559]
+}, {
+    "step": 13,
+    "text": "Turn in [@quest=Report to Goldshire], accept [@quest=The Fargodeep Mine]. Go inside the inn, accept [@quest=Kobold Candles], turn in [@quest=Rest and Relaxation], get a [@item=Hearthstone]. You should be 6 now. Go upstairs, train [@skill=First Aid], then go outside and buy your Warrior moves by the blacksmith. While at the blacksmith, train [@skill=Blacksmithing] to make stones.",
+    "coords": [-501.96875, 555.53125]
+}, {
+    "step": 14,
+    "text": "Accept [@quest=Gold Dust Exchange], go south to the Fargodeep Mine and beat up a bunch of [@mob=Kobold Miners]/[@mob=Kobold Tunnelers]. If they drop [@item=Rough Stone], make stones out of them. Go back to Goldshire when you have enough [@item=Large Candles].",
+    "coords": [-513.09375, 552.0688],
+    "macros": [{
+        "title": "Sharpening Stone Macro",
+        "text": "#showtooltip\n/use Rough Sharpening Stone\n/use 16"
+    }, {
+        "title": "Weightstone Macro",
+        "text": "#showtooltip\n/use Rough Weightstone\n/use 16"
+    }]
+}, {
+    "step": 15,
+    "text": "Turn in [@quest=Kobold Candles], accept [@quest=Shipment to Stormwind], walk to Stormwind.",
+    "coords": [-501.875, 556.721697626419]
+}, {
+    "step": 16,
+    "text": "Turn in [@quest=Shipment to Stormwind] at the alchemy shop, accept [@quest=Wine Shop Advert] outside.",
+    "coords": [-483.78125, 539.16282249742]
+}, {
+    "step": 17,
+    "text": "Accept [@quest=Harlan Needs a Resupply] at the armor shop.",
+    "coords": [-481.4375, 538.8816305469556]
+}, {
+    "step": 18,
+    "text": "Run up to the Dwarven District and learn [@skill=Mining]. Don't forget to buy a [@item=Mining Pick].",
+    "coords": [-470.59375, 536.946297]
+}, {
+    "step": 19,
+    "text": "Run to the clothier, turn in [@quest=Harlan Needs a Resupply], accept [@quest=Package for Thurman].",
+    "coords": [-481.1875, 536.4446336429309]
+}, {
+    "step": 20,
+    "text": "Train [@skill=Fishing] at the dock. Watch out for the [@mob=Sewer Beast]. Wave at your fellow fish enthusiasts.",
+    "coords": [-481.90625, 534.7880740454076]
+}, {
+    "step": 21,
+    "text": "Turn in [@quest=Wine Shop Advert] at the winery, vendor the wine you get if you're poor. Or drink it. It's up to you really.",
+    "coords": [-484.65625, 537.1313402992776]
+}, {
+    "step": 22,
+    "text": "Turn in [@quest=Package for Thurman]. Leave Stormwind and head south. Peek at the auction house for a cheap green weapon if you're allowed/want to.",
+    "coords": [-487.0625, 533.3196271929825]
+}, {
+    "step": 23,
+    "text": "Run down to the Stonefield Farm, accept [@quest=Princess Must Die!] and [@quest=Lost Necklace]. Remember to turn on [@move=Find Minerals].",
+    "coords": [-514.3125, 548.1497644395497]
+}, {
+    "step": 24,
+    "text": "Run over to the Maclure Vineyards, turn in [@quest=Lost Necklace], accept [@quest=Pie for Billy].",
+    "coords": [-515.7827809330217, 556.6739001109943]
+}, {
+    "step": 25,
+    "text": "Accept [@quest=Young Lovers]. Head west, killing [@mob=Stonetusk Boars] on your way.",
+    "coords": [-518.5825668367595, 556.5850363639292]
+}, {
+    "step": 26,
+    "text": "Turn in [@quest=Young Lovers], accept [@quest=Speak with Gramma]. Head easy, killing [@mob=Stonetusk Boars] until you have 4 x [@item=Chunk of Boar Meat].",
+    "coords": [-516.1383093017504, 543.2554743041665]
+}, {
+    "step": 27,
+    "text": "Turn in [@quest=Speak with Gramma] and [@quest=Pie for Billy], accept [@quest=Note to William] and [@quest=Back to Billy].",
+    "coords": [-515.0533561158444, 548.1539901993741]
+}, {
+    "step": 28,
+    "text": "Turn in [@quest=Back to Billy], accept [@quest=Goldtooth]. Head back to the mine.",
+    "coords": [-516.75, 556.7828102055801]
+}, {
+    "step": 29,
+    "text": "Finish collecting [@item=Gold Dust], work your way down the mine to kill [@mob=Goldtooth]. Leave and walk back to Goldshire. Upgade your weapon if you still haven't - make stones until your Blacksmithing is 15 and then craft a [@item=Copper Mace], or buy a [@item=Gladius] if you have the money.",
+    "coords": [-512.5, 552.0033410732714]
+}, {
+    "step": 30,
+    "text": "Turn in [@quest=Gold Dust Exchange], accept [@quest=A Fishy Peril]. Run over to [@mob=Marshal Dughan], turn in [@quest=A Fishy Peril] and [@quest=The Fargodeep Mine], accept [@quest=Further Concerns] and [@quest=The Jasperlode Mine]. You should be 8 now, buy your Warrior moves. Go into the inn, turn in [@quest=Note to William], accept [@quest=Collecting Kelp].",
+    "coords": [-502.9375, 555.1589396284829]
+}, {
+    "step": 31,
+    "text": "Go kill murlocs for [@item=Crystal Kelp Fronds], head northeast when done.",
+    "coords": [-502.19444952235864, 568.5408721094317]
+}, {
+    "step": 32,
+    "text": "Walk into the Jasperlode Mine and work your way back to complete [@quest=The Jasperlode Mine]. Leave and head southeast",
+    "coords": [-492.8329395838735, 575.7154613164844]
+}, {
+    "step": 33,
+    "text": "Run over to [@mob=Guard Thomas], turn in [@quest=Further Concerns], accept [@quest=Find the Lost Guards] and [@quest=Protect the Frontier].",
+    "coords": [-506.4674732225034, 588.6297218891791]
+}, {
+    "step": 34,
+    "text": "Go north, turn in [@quest=Find the Lost Guards] at the meat pile, accept [@quest=Discover Rolf's Fate].",
+    "coords": [-498.21875, 587.6921369293602]
+}, {
+    "step": 35,
+    "text": "Go west towards the murloc camp, turn in [@quest=Discover Rolf's Fate] at the other meat pile. Accept [@quest=Report to Thomas], head south. The murloc camp is scary, single pull them until you can get to the meat.",
+    "coords": [-495.375, 594.178452330806]
+}, {
+    "step": 36,
+    "text": "Run down to Eastvale, accept [@quest=Red Linen Goods] and [@quest=A Bundle of Trouble]. Go southwest and turn in [@quest=Report to Thomas], accept [@quest=Deliver Thomas' Report] and [@quest=Report to Gryan Stoutmantle]. If you're not 9 yet, go kill [@mob=Prowlers]/[@mob=Young Forest Bears] until you are, then hearth to Goldshire.",
+    "coords": [-503.771505522235, 596.5717461782789],
+    "special": "hearth"
+}, {
+    "step": 37,
+    "text": "Turn in [@quest=Collecting Kelp], accept [@quest=The Escape]. Go outside, turn in [@quest=The Jasperlode Mine] and [@quest=Deliver Thomas' Report], accept [@quest=Westbrook Garrison Needs Help!] and [@quest=Cloth and Leather Armor]. Go in the blacksmith and accept [@quest=Elmore's Task]. If you want, learn [@skill=Cooking] and cook up all the meat in your bags (save 4 x [@item=Chunk of Boar Meat] for a later quest if you have them). Head to Stormwind.",
+    "coords": [-502.03125, 557.3327504782401]
+}, {
+    "step": 38,
+    "text": "Turn in [@quest=Elmore's Task], accept [@quest=Stormpike's Delivery]. Train [@skill=Mining] if you need to. You can swap [@skill=Blacksmithing] with [@skill=Engineering] now.",
+    "coords": [-469.75, 537.193950084246]
+}, {
+    "step": 39,
+    "text": "Go into the Deeprun Tram, take train through the weird underwater voyage to Ironforge.",
+    "coords": [-469.53125, 541.15625]
+}, {
+    "step": 40,
+    "text": "Arrive at Ironforge. Vendor and train if needed, then leave.",
+    "coords": [-364.21875, 594.40625]
+}, {
+    "step": 41,
+    "text": "Run down to Steelgrill's Depot and accept [@quest=Ammo for Rumbleshot], [@quest=Stocking Jetstream], and [@quest=The Grizzled Den].",
+    "coords": [-382.7290326144758, 578.3564549584917]
+}, {
+    "step": 42,
+    "text": "Go into the little gnome house outside Kharanos, accept [@quest=Operation Recombobulation].",
+    "coords": [-382.26077051858914, 571.8994064295185]
+}, {
+    "step": 43,
+    "text": "Go into Kharanos, accept [@quest=Tools for Steelgrill], [@quest=Beer Basted Boar Ribs], and [@quest=Frostmane Hold].",
+    "coords": [-385.80367522095656, 572.3189609337462]
+}, {
+    "step": 44,
+    "text": "Run down into the valley, grab [@item=Rumbleshot's Ammo]. Kill boars/bears as needed for your quests.",
+    "coords": [-390.3760321266877, 568.8507115268667]
+}, {
+    "step": 45,
+    "text": "Continue south, killing bears/boars. Turn in [@quest=Ammo for Rumbleshot].",
+    "coords": [-398.94262741388127, 564.197548444754]
+}, {
+    "step": 46,
+    "text": "Go northwest, killing more bears/boars. Walk into the crevice and go accept [@quest=Tundra MacGrann's Stolen Stash]. Wait for [@mob=Old Icebeard] to leave his cave, or kill him if you're feeling spicy. Loot the meat and go turn it in.",
+    "coords": [-385.7436805777619, 554.6977967817778]
+}, {
+    "step": 47,
+    "text": "Jump off the cliff and go over to Brewnall Village. Accept [@quest=Bitter Rivals] and [@quest=The Perfect Stout]. Consider why 75% of Dwarf quests involve alcohol or food.",
+    "coords": [-379.9259038941089, 548.6560034692632]
+}, {
+    "step": 48,
+    "text": "Go up to the troll camp, steal their [@item=Shimmerweed] and their lives. Go back to Brewnall after. If you still need bear/boar parts at this point, kill them on the way there and back.",
+    "coords": [-370.6774124614376, 563.2118678263652]
+}, {
+    "step": 49,
+    "text": "Turn in [@quest=The Perfect Stout], don't accept [@quest=Shimmer Stout] yet. Go down to Frostmane Hold.",
+    "coords": [-380.09375, 549.53125]
+}, {
+    "step": 50,
+    "text": "Kill [@mob=Frostmane Headhunters] and poke your head in the cave a bit to complete [@quest=Frostmane Hold].",
+    "coords": [-384.34375, 540]
+}, {
+    "step": 51,
+    "text": "Go to the Grizzled Den, collect [@item=Wendigo Hides]. Go to Kharanos after. You should be about halfway through 10 by now. Make sure to put your talent points into [@move=Cruelty].",
+    "coords": [-387.2100768221724, 565.8723078522137]
+}, {
+    "step": 52,
+    "text": "Accept [@quest=Rejold's New Brew] (if you can't accept this quest, you need to drop [@quest=Shimmer Stout]). Turn in [@quest=Frostmane Hold], accept [@quest=The Reports]. Go into the inn and buy a [@item=Thunder Ale] and [@item=Rhapsody Malt], accept [@quest=Muren Stormpike], learn [@move=Bloodrage] and skip the new [@move=Rend] for now. Go downstairs and give the dwarf the [@item=Thunder Ale], interact with the unguarded barrel to turn in [@quest=Bitter Rivals] and accept [@quest=Return to Marleth]. Go outside and turn in [@quest=Beer Basted Boar Ribs].",
+    "coords": [-385.3645288640263, 571.2420705098174]
+}, {
+    "step": 53,
+    "text": "Trot over to Steelgrill's, turn in [@quest=Tools for Steelgrill], [@quest=Stocking Jetstream], and [@quest=The Grizzled Den]. Accept [@quest=Evershine]. If you don't have [@money=18s25c], kill mobs or sell things until you do, then walk up to Ironforge. ",
+    "coords": [-383.3171314065646, 577.3793612728759]
+}, {
+    "step": 54,
+    "text": "Turn in [@quest=The Reports], make sure to /snub [@mob=King Magni Bronzebeard].",
+    "coords": [-364.25375, 588.28125]
+}, {
+    "step": 55,
+    "text": "Turn in [@quest=Muren Stormpike], accept [@quest=Vejrek]. Go next door to learn [@skill=Two-Handed Maces] and [@skill=Guns]. You could also learn a different ranged weapon, but guns are cooler. If you need a gun and can afford it, go downstairs and buy one.",
+    "coords": [-369.60460283648723, 593.6955825090031],
+    "macros": [{
+        "title": "Ranged Weapon Macro",
+        "text": "#showtooltip\n/cast [worn:thrown] Throw; [worn:bow] Shoot Bow; [worn:gun] Shoot Gun; [worn:crossbow] Shoot Crossbow"
+    }],
+    "special": "warrior"
+}, {
+    "step": 56,
+    "text": "Go back to Brewnall, turn in [@quest=Return to Marleth], [@quest=Evershine], and [@quest=Rejold's New Brew]. Accept [@quest=Shimmer Stout] and [@quest=A Favor for Evershine]. Sell the [@item=Mug of Shimmer Stout] in your bag or give it to the nearest Blue Bar.",
+    "coords": [-378.214702242599, 549.8806916997939]
+}, {
+    "step": 57,
+    "text": "Go west and obliterate the local [@mob=Ice Claw Bear]/[@mob=Elder Crag Boar]/[@mob=Snow Leopard] populations. Go north, beat up [@mob=Leper Gnomes] and steal their gears. If [@mob=Leper Gnome] spawns are highly contested, abandon [@quest=Operation Recombobulation] and move on.",
+    "coords": [-376.95426666263666, 542.2550564410217]
+}, {
+    "step": 58,
+    "text": "Turn in [@quest=A Favor for Evershine], accept [@quest=Return to Bellowfiz], head south.",
+    "coords": [-379.6060262371082, 548.4539504977981]
+}, {
+    "step": 59,
+    "text": "Kill [@mob=Vejrek] for [@quest=Vejrek]. Loot head, go back to Kharanos.",
+    "coords": [-391.58029119972156, 544.8990905870223]
+}, {
+    "step": 60,
+    "text": "Turn in [@quest=Operation Recombobulation] if you did it, then go into the inn and cook up any meat you still have. You can buy another [@item=Small Brown Pouch] or train [@move=Rend] now, if you want. Go back to Steelgrill's, turn in [@quest=Return to Bellowfiz], head to Ironforge.",
+    "coords": [-382.19421488091314, 573.7824542827269]
+}, {
+    "step": 61,
+    "text": "Turn in [@quest=Vejrek], accept [@quest=Tormus Deepforge]. If you still need a gun, stop at the gun store next door and buy an [@item=Ornate Blunderbuss] and some [@item=Light Shot], if you need a gun and can afford it. Alternatively, you can make a [@item=Rough Boomstick] and some [@item=Crafted Light Shot].",
+    "coords": [-369.125, 592.6875],
+    "macros": [{
+        "title": "Sunder Armor Macro",
+        "text": "#showtooltip\n/cast Sunder Armor\n/startattack"
+    }, {
+        "title": "Taunt Macro",
+        "text": "#showtooltip Taunt\n/cast [nostance:2] Defensive Stance\n/cast Taunt\n/startattack"
+    }]
+}, {
+    "step": 62,
+    "text": "Turn in [@quest=Tormus Deepforge], accept [@quest=Ironband's Compound]. Do any smelting/crafting that you need, then leave.",
+    "coords": [-362.78125, 589.25625]
+}, {
+    "step": 63,
+    "text": "Go to Amberstill Ranch, accept [@quest=Protecting the Herd]. Put on a weapon stone and eat some [@item=Beer Basted Boar Ribs]. If you have a 3 dps melee weapon or better, do the next step. Otherise find someone to help you. Skipping is a bad idea unless you have a comparable weapon.",
+    "coords": [-383.47107597956807, 596.7211800215919]
+}, {
+    "step": 64,
+    "text": "Go up to [@mob=Vagash], pull him with your gun and work your way down the cliff with him. His stun has a 5 yard range. Where the ranch's road meet the main road, there's a [@mob=Dun Morogh Mountaineer]. You want to keep [@mob=Vagash] leashed and off you with a combination of gun shots, [@move=Hamstring], and [@item=Explosive Rockets] or [@item=Glowing Wax Sticks]. Pull him over to the guard, making sure you deal at least 50% of his health yourself. The guard will aggro and finish him off. Loot [@item=Fang of Vagash], turn in [@quest=Protecting the Herd] and get the [@item=Coldridge Hammer]. Equip it and go bonk some boars to skill it up.",
+    "coords": [-388.5132562173617, 596.3799798551246]
+}, {
+    "step": 65,
+    "text": "Accept [@quest=Those Blasted Troggs!] and [@quest=The Public Servant]. Go into the cave below.",
+    "coords": [-388.6908491573152, 605.9045803934905]
+}, {
+    "step": 66,
+    "text": "Kill [@mob=Rockjaw Skullthumpers] and [@mob=Rockjaw Bonesnappers] until both quests are done. Inside the cave, pull them with your gun to level gun skill and avoid a double pull. Turn in [@quest=Those Blasted Troggs!] and [@quest=The Public Servant], then head southeast.",
+    "coords": [-390.1684935874933, 609.0005972948159]
+}, {
+    "step": 67,
+    "text": "Enter Ironband's Compound, work your way through the troggs and dark irons until the entrance to the house is clear. Pull and [@move=Hamstring] the dwarves until you get down to [@mob=Captain Beld]. Kill him, take his shiny rock, and head north.",
+    "coords": [-395.55589500099944, 618.2518452240582]
+}, {
+    "step": 68,
+    "text": "Go to the North Gate Outpost, accept [@quest=The Lost Pilot]. Go northwest, turn in [@quest=The Lost Pilot] at the spooky dwarf skeleton and accept [@quest=A Pilot's Revenge]. [@mob=Mangeclaw] spawns at the top of the hill and runs down, beat him up and cut off his paw. Take it back southeast and turn in [@quest=A Pilot's Revenge]. Continue on to Loch Modan.",
+    "coords": [-372.4292063714515, 628.0156512967958]
+}, {
+    "step": 69,
+    "text": "Turn in [@quest=Stormpike's Delivery] and accept [@quest=Stormpike's Order]. Nice job making it to step 69.",
+    "coords": [-362.64097937064656, 637.7378161273522]
+}, {
+    "step": 70,
+    "text": "Walk down to Thelsamar. Get the flight path, then fly back to Ironforge.",
+    "coords": [-381.00765250698845, 645.6563817909247]
+}, {
+    "step": 71,
+    "text": "Turn in [@quest=Ironband's Compound], complete [@quest=Grey Iron Weapons] for a 1-hand weapon. Keep it for a sword/board swap.",
+    "coords": [-363.5, 589.25625]
+}, {
+    "step": 72,
+    "text": "Go to the Warrior trainer, buy [@move=Battle Shout]/[@move=Overpower], and [@move=Shield Bash] if you can afford it. The following macros allow you to [@move=Shield Bash] and swap back to your 2-hand weapon. Both are spammable. Make sure to replace weapon names with whatever you're using.",
+    "coords": [-369.1034990769271, 593.7819719376503],
+    "macros": [{
+        "title": "Shield Bash Macro",
+        "text": "#showtooltip Shield Bash\n/cast [stance:1/2,equipped:shields,modifier:ctrl] Shield Bash; [stance:3] Battle Stance\n/stopmacro [equipped: shields]\n/equip [noequipped:shields] Umbral Sword\n/equip [noequipped:shields] Stone Buckler"
+    },
+    {
+        "title": "2H Swap Macro",
+        "text": "#showtooltip Coldridge Hammer\n/stopmacro [noequipped: shields]\n/equip [equipped:shields] Coldridge Hammer"
+    }],
+    "special": "warrior"
+}, {
+    "step": 73,
+    "text": "Go into the Deeprun Tram, accept [@quest=Deeprun Rat Roundup], run around the station and seduce rats with your magic flute. Return to [@mob=Monty] with your rat harem, turn in [@quest=Deeprun Rat Roundup] and accept [@quest=Me Brother, Nipsy]. Ride the tram to the Stormwind station.",
+    "coords": [-364.75406502784045, 596.1690307554734]
+}, {
+    "step": 74,
+    "text": "Turn in [@quest=Me Brother, Nipsy] at the station. Go into Stormwind.",
+    "coords": [-469.2719482958491, 541.47774975729]
+}, {
+    "step": 75,
+    "text": "Turn in [@quest=Stormpike's Order]. Go to Old Town.",
+    "coords": [-471.2009435990084, 539.7679584658533]
+}, {
+    "step": 76,
+    "text": "Accept [@quest=Beat Bartleby] and beat [@mob=Bartleby], then turn in [@quest=Beat Bartleby]. Accept [@quest=Bartleby's Mug] from [@mob=Bartleby] and turn in [@quest=Bartleby's Mug] at the guy next to [@mob=Bartleby]. Accept [@quest=Marshal Haggard], leave Stormwind.",
+    "coords": [-476.35249935965753, 546.0755263225167]
+}, {
+    "step": 77,
+    "text": "Turn in [@quest=Westbrook Garrison Needs Help!]. Accept [@quest=Riverpaw Gnoll Bounty] and [@quest=Wanted: \"Hogger\"]. Go south to the gnoll fields.",
+    "coords": [-508.342133340599, 536.5902259668972]
+}, {
+    "step": 78,
+    "text": "Kill gnolls until you have enough [@item=Painted Gnoll Armbands]. Find [@mob=Hogger], shoot him from max range and run away to avoid the extra damage from [@move=Rushing Charge]. [@move=Hamstring] him when he gets to melee, and begin kiting.",
+    "coords": [-520.2952306727857, 539.9424708140936]
+}, {
+    "step": 79,
+    "text": "Similar to [@mob=Vagash], use a combination of gun shots, [@move=Hamstring], and [@item=Explosive Rockets] or [@item=Glowing Wax Sticks] to kite [@mob=Hogger] over to the guard tower south of the road. Let the [@mob=Stormwind Guards] there aggro him, then finish him off. You'll probably want a potion for this, and eat a [@item=Beer Basted Boar Ribs] if you still have one. Head southeast.",
+    "coords": [-512.3660361912588, 537.1051149572738]
+}, {
+    "step": 80,
+    "text": "Turn in [@quest=Goldtooth] and [@quest=The Escape] at the two farms south of Fargodeep mine. Keep going east, killing any bears or defias you see. Split pull [@mob=Princess], pull her away from her [@mob=Porcine Entourage], and kill her.",
+    "coords": [-511.09774428493716, 581.811144567979]
+}, {
+    "step": 81,
+    "text": "Work your way over to Eastvale to turn in [@quest=Marshal Haggard]. Accept [@quest=Dead-Tooth Jack], walk south and kill [@mob=Dead-Tooth Jack] and the other defias. Work your way northeast around the logging camp, killing animals and collecting wood until you're done. If you still need [@item=Red Linen Bandanas], go to the little island to the north and kill [@mob=Defias Rogue Wizards] until you're done.",
+    "coords": [-498.86234678049226, 594.1365082305448]
+}, {
+    "step": 82,
+    "text": "Turn in [@quest=Red Linen Goods], [@quest=A Bundle of Trouble], and [@quest=Protect the Frontier]. Go turn in [@quest=Dead-Tooth Jack], pick whatever weapon sells for the most. Walk east into Redridge, staying on the road until you reach the Lakeshire flight point. Fly back to Stormwind.",
+    "coords": [-503.82386440256084, 599.5665987633047]
+}, {
+    "step": 83,
+    "text": "Walk east into Redridge, staying on the road until you reach the Lakeshire flight point. Accept [@quest=Encroaching Gnolls] on the way. Fly back to Stormwind.",
+    "coords": [-501.3128451426767, 625.486797575012]
+}]

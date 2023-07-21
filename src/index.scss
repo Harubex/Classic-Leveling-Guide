@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import 'leaflet/dist/leaflet.css';
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Accidental Presidency';
+    src: url('https://minecraft-map69.s3.us-east-2.amazonaws.com/Accidental+Presidency.ttf');
+}
+
+#option-menu-button {
+    background-color: #001D29cc;
+    color: rgba(248, 247, 241, 255);
+    position: absolute !important;
+    top: 1em;
+    & > svg {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
+
+#option-menu {
+    & * li {
+        padding: 0 0em 0 0.5em;
+    }
+}
+
+#root {
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+button.step-button {
+    text-transform: none;
+    text-align: left;
+    color: rgb(248, 247, 241);
+    padding: 0;
+}
+
+.leaflet-container {
+    height: 100vh;
+    width: 75vw;
+    background: #001D29;
+}
+
+path.leaflet-interactive {
+    stroke: #00000044;
+}
+
+.leaflet-control-attribution, .leaflet-control-container {
+    display: none;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background-color: #434955;
+    color: hsl(51, 33%, 96%);
+    border: 1px solid #52646b;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.wowhead-tooltip-powered {
+    display: none !important;
+}
+
+.MuiTooltip-tooltip {
+    font-size: 1em !important;
+    font-family: monospace !important;
+    & > ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+.leaflet-div-icon {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.number-icon {
+    font-size: 1.5em;
+    position: relative;
+    bottom: 50%;
+    color: lighten(#C69B6D, 20%);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.hearth-icon > div {
+    color: #38d6ce;
+}
+
+.step-number {
+    color: #C69B6D; // class color coded
+    font-weight: 500;
+    display: inline;
+}
+
+.step-pane {
+    overflow: scroll;
+    border-image: url('https://minecraft-map69.s3.us-east-2.amazonaws.com/ui-dialogbox-divider.png') 8;
+    border-left: 8px solid;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    width: 25vw;
+    height: 100vw;
+    background-color: #222 !important;
+    padding: 3px 4px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.step-pane.left {
+    border-left: unset;
+    border-right: 8px solid;
+    position: relative;
+    right: 75%;
+    direction: rtl;
+}
+
+.step-pane-inner {
+    direction: ltr;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 300;
+    color: hsl(51, 33%, 96%);
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.step-pane-list {
+    list-style: none;
+    padding: 1em;
+
+    & > li {
+        font-family: 'Poppins';
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        margin: 5px 0;
+    }
+}
+
+body {
+    background-color: #001D29;
+}

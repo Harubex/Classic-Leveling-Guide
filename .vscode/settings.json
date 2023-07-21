@@ -1,0 +1,15 @@
+{
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    "git.ignoreLimitWarning": true,
+    "workbench.sideBar.location": "left",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "tsconfig.*.json": true
+    }
+}
