@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import React, { useState } from "react";
+import React from "react";
 import List from "@mui/material/List";
 import Stack from "@mui/material/Stack";
 import ListItem from "@mui/material/ListItem";
@@ -10,7 +10,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { ViewportList } from "react-viewport-list";
 
 import Macro from "./Macro";
-import Quests from "./Templates/Quests";
+import Quests from "./components/Quests";
 import Mobs from "./Templates/Mobs";
 import Moves from "./Templates/Moves";
 import Money from "./Templates/Money";
@@ -76,20 +76,9 @@ const buildStep = ({step, text}: StepData, includeNumber = true): React.ReactNod
     return chunks;
 };
 
-const isElementInViewport = (el: HTMLElement) => {
-    const rect = el.getBoundingClientRect();
-
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-};
-
 export const StepList: React.FC<StepListProps> = (props: StepListProps) => {
     const [selectedStep, setSelectedStep] = useContext(SelectedStepContext);
-    const [center, setCenter] = useLocalStorage<number[]>("currentMapCenter", [-485.125, 563.03125]);
+    const [_, setCenter] = useLocalStorage<number[]>("currentMapCenter", [-485.125, 563.03125]);
     const onStepSelected = (stepNum: number) => {
         return () => {
             setSelectedStep(stepNum);
@@ -97,7 +86,7 @@ export const StepList: React.FC<StepListProps> = (props: StepListProps) => {
         };
     };
 
-    const viewportChanged = ([firstIndex, lastIndex]: [number, number]) => {
+    const viewportChanged = ([firstIndex]: [number, number]) => {
         setSelectedStep(firstIndex + 2);
     };
 

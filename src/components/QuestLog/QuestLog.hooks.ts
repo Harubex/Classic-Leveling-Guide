@@ -1,31 +1,11 @@
-import { useEffect, useState } from "react";
-import useLocalStorage from "use-local-storage";
 import { minBy } from "lodash";
 
-
-interface QuestInfo {
-    name: string;
-    accepted?: boolean;
-    completed?: boolean;
-    index?: number;
-}
-
-type StepQuestInfo = {[stepNum: number]: QuestInfo[]};
-
-const questNameRegex = /(?<!complete)\s\[@quest=([\w\s'!\-,":]+)\]/gi;
+const questNameRegex = /(?<!complete|take|drop|abandon)\s\[@quest=([\w\s'!\-,":]+)\]/gi;
 const questStateRegex = /(accept|turn in)/gi;
 
-export const useQuestSteps = (steps: StepJson[]) => {
-    const [stepQuestInfo, setStepQuestInfo] = useState<StepQuestInfo>({});
-    const [selectedStep] = useLocalStorage<number>("selectedStep", 1);
-    useEffect(() => {
-        const newInfo = parseQuestSteps(steps, stepQuestInfo);
-        setStepQuestInfo(newInfo);
-    }, [steps, selectedStep, stepQuestInfo]);
-    return stepQuestInfo;
-};
+const stepQuestInfo: StepQuestInfo = {};
 
-export const parseQuestSteps = (steps: StepJson | StepJson[], stepQuestInfo: StepQuestInfo): StepQuestInfo => {
+export const parseQuestSteps = (steps: StepJson | StepJson[]): StepQuestInfo => {
     const stepArray = Array.isArray(steps) ? steps : [steps];
     for (const { step, text } of stepArray) {
         if (!stepQuestInfo[step]) {
@@ -37,7 +17,13 @@ export const parseQuestSteps = (steps: StepJson | StepJson[], stepQuestInfo: Ste
                     stepQuests[questInfo.name] = questInfo;
                 }
 
-                const closestState = minBy(stateIndices, (stateIndex) => Math.abs(stateIndex.index! - questInfo.index!));
+                const closestState = minBy(stateIndices, (stateIndex) => {
+                    const delta = questInfo.index! - stateIndex.index!;
+                    if (delta < 0) {
+                        return 10000; // some random large
+                    }
+                    return delta;
+                });
                 if (closestState) {
                     const stateText = closestState[0].toLowerCase();
                     if (stateText === "accept") {
@@ -48,6 +34,8 @@ export const parseQuestSteps = (steps: StepJson | StepJson[], stepQuestInfo: Ste
                 }
             }
             stepQuestInfo[step] = Object.values(stepQuests);
+            
+            console.log(step, stepQuestInfo[step]);
         }
     }
     return stepQuestInfo;

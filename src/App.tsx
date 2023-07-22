@@ -18,14 +18,26 @@ type ContextType = [number, React.Dispatch<React.SetStateAction<number | undefin
 
 function App() {
     const [selectedStep, setSelectedStep] = useLocalStorage("selectedStep", 1);
-    const ctx = [...[selectedStep, setSelectedStep]] as ContextType;
+    const [hideQuestLog, setHideQuestLog] = useLocalStorage("hideQuestLog", false);
+    const [sidebarPosition, setSidebarPosition] = useLocalStorage("sidebarPosition", "right");
+    const ctx = [...[selectedStep, setSelectedStep, 
+        hideQuestLog, setHideQuestLog, 
+        sidebarPosition, setSidebarPosition]] as ContextType;
     return (
         <ThemeProvider theme={theme}>
             <SelectedStepContext.Provider value={ctx}>
                 <OptionMenu />
-                <QuestLog />
+                {sidebarPosition === "left" ? <StepPane /> : (
+                    <>            
+                        {!hideQuestLog && <QuestLog step={selectedStep} />}
+                    </>
+                )}
                 <Map />
-                <StepPane />
+                {sidebarPosition === "right" ? <StepPane /> : (
+                    <>            
+                        {!hideQuestLog && <QuestLog step={selectedStep} />}
+                    </>
+                )}
             </SelectedStepContext.Provider>
             <CssBaseline enableColorScheme />
         </ThemeProvider>

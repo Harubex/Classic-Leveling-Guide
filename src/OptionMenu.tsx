@@ -21,12 +21,13 @@ export const OptionMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const [showLines, setShowLines] = useLocalStorage<boolean>("showLines", true);
+    const [hideQuestLog, setHideQuestLog] = useLocalStorage("hideQuestLog", false);
     const [sidebarPosition, setSidebarPosition] = useLocalStorage<string>("sidebarPosition", "right");
     const mousePos = useMousePosition();
     useEffect(() => {
         if (lastMousePos[0] !== mousePos[0] && lastMousePos[1] !== mousePos[1]) {
             lastMousePos = mousePos;
-            lastTimeoutId = setTimeout(() => {
+            lastTimeoutId = window.setTimeout(() => {
                 setShown(false);
                 setMenuOpen(false);
             }, 2000);
@@ -41,11 +42,15 @@ export const OptionMenu = () => {
 
     const menuClosed = () => setMenuOpen(false);
 
-    const showLinesChanged = (event: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
+    const showLinesChanged = (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
         setShowLines(checked);
     }
 
-    const sidebarPositionChanged = (event: React.MouseEvent<HTMLElement, MouseEvent>, value: "left" | "right") => {
+    const toggleQuestLog = (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
+        setHideQuestLog(!checked);
+    }
+
+    const sidebarPositionChanged = (_: React.MouseEvent<HTMLElement, MouseEvent>, value: "left" | "right") => {
         setSidebarPosition(value);
     };
 
@@ -59,6 +64,10 @@ export const OptionMenu = () => {
                 </Fab>
             </Fade>
             <Menu id="option-menu" anchorEl={anchorEl} open={menuOpen} onClose={menuClosed}>
+                <MenuItem>
+                    <Typography>Show Quest Log</Typography>
+                    <Switch color="secondary" checked={!hideQuestLog} onChange={toggleQuestLog} />
+                </MenuItem>
                 <MenuItem>
                     <Typography>Show Lines</Typography>
                     <Switch color="secondary" checked={showLines} onChange={showLinesChanged} />

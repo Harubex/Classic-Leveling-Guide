@@ -10,28 +10,12 @@ export const Map = () => {
     //extend(CRS.Simple, )
     const [center] = useLocalStorage<number[]>("currentMapCenter", [-485.125, 563.03125]);
     const [showLines] = useLocalStorage<boolean>("showLines", true);
-    const [sidebarPosition] = useLocalStorage<string>("sidebarPosition", "right");
     const [selectedStep] = useContext(SelectedStepContext);
 
-    // jesus fuck
-    const styles = (sidebarPosition === "left" ? { position: "relative", left: "25%" } : {}) as CSSProperties;
-    const mapEle = document.getElementById("main-map");
 
-    /*setTimeout(() => {
-        const mapEle = document.getElementById("main-map");
-        if (mapEle) {
-            mapEle.setAttribute("style", styles);
-        }
-    }, 500);
-    if (mapEle) {
-        mapEle.setAttribute("style", styles);
-    }
-
-    const classes = clsx("step-pane", {"left": sidebarPosition === "left"});*/
 
     return (
-        <div style={styles}>
-            <MapContainer id="main-map" crs={CRS.Simple} center={center as LatLngExpression} zoom={5} scrollWheelZoom={true} zoomSnap={0} zoomDelta={0.25} minZoom={2} maxZoom={5}>
+        <MapContainer id="main-map" crs={CRS.Simple} center={center as LatLngExpression} zoom={5} scrollWheelZoom={true} zoomSnap={0} zoomDelta={0.25} minZoom={2} maxZoom={5}>
                 <Debug />
                 <TileLayer
                     url="https://minecraft-map69.s3.us-east-2.amazonaws.com/tiles/azeroth_{z}_{y}_{x}.png"
@@ -52,8 +36,6 @@ export const Map = () => {
                     );
                 })}
             </MapContainer>
-        </div>
-        
     );
 };
 

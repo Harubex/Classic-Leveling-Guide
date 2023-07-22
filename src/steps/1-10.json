@@ -14,7 +14,7 @@
     "special": "warrior"
 }, {
     "step": 3,
-    "text": "Accept [@quest=Kobold Camp Cleanup], walk right to Warrior trainer, train [@move=Battle Shout]. Go out, accept [@quest=Eagan Peltskinner], turn it in at [@mob=Eagan Peltskinner]. Accept [@quest=Wolves Across the Border] and kill [@mob=Young Wolf]/[@mob=Kobold Vermin] as spawns permit. Focus on vermin. Kill other mobs while waiting.",
+    "text": "Accept [@quest=Kobold Camp Cleanup], walk right to Warrior trainer, train [@move=Battle Shout]. Go out, accept [@quest=Eagan Peltskinner], walk over to [@mob=Eagan Peltskinner] and turn in [@quest=Eagan Peltskinner]. Accept [@quest=Wolves Across the Border] and kill [@mob=Young Wolf]/[@mob=Kobold Vermin] as spawns permit. Focus on vermin. Kill other mobs while waiting.",
     "coords": [-481.4375, 562.9375]
 }, {
     "step": 4,
@@ -26,7 +26,7 @@
     "coords": [-486.375, 569.71875]
 }, {
     "step": 6,
-    "text": "Turn in [@quest=Brotherhood of Thieves], accept [@quest=Milly Osworth] and [@quest=Bounty on Garrick Padfoot], vendor old weapon and other garbage. If you're not 4 yet, grind until you're 4.",
+    "text": "Turn in [@quest=Brotherhood of Thieves], accept [@quest=Milly Osworth] and [@quest=Bounty on Garrick Padfoot], vendor your old weapon and other garbage. If you're not 4 yet, grind until you're 4.",
     "coords": [-486.25, 562.533383996561]
 }, {
     "step": 7,
@@ -205,7 +205,7 @@
     "coords": [-398.94262741388127, 564.197548444754]
 }, {
     "step": 46,
-    "text": "Go northwest, killing more bears/boars. Walk into the crevice and go accept [@quest=Tundra MacGrann's Stolen Stash]. Wait for [@mob=Old Icebeard] to leave his cave, or kill him if you're feeling spicy. Loot the meat and go turn it in.",
+    "text": "Go northwest, killing more bears/boars. Walk into the crevice and go accept [@quest=Tundra MacGrann's Stolen Stash]. Wait for [@mob=Old Icebeard] to leave his cave, or kill him if you're feeling spicy. Loot the meat and go turn in [@quest=Tundra MacGrann's Stolen Stash].",
     "coords": [-385.7436805777619, 554.6977967817778]
 }, {
     "step": 47,
@@ -217,7 +217,7 @@
     "coords": [-370.6774124614376, 563.2118678263652]
 }, {
     "step": 49,
-    "text": "Turn in [@quest=The Perfect Stout], don't accept [@quest=Shimmer Stout] yet. Go down to Frostmane Hold.",
+    "text": "Turn in [@quest=The Perfect Stout], don't take [@quest=Shimmer Stout] yet. Go down to Frostmane Hold.",
     "coords": [-380.09375, 549.53125]
 }, {
     "step": 50,

@@ -12,3 +12,12 @@ declare interface StepJson {
     note?: string;
     coords: number[];
 }
+
+declare interface QuestInfo {
+    name: string;
+    accepted?: boolean;
+    completed?: boolean;
+    index?: number;
+}
+
+declare type StepQuestInfo = {[stepNum: number]: QuestInfo[]};

@@ -13,7 +13,14 @@ interface SidebarPaneProps {
 export const SidebarPane: React.FC<SidebarPaneProps> = (props) => {
     const [sidebarPosition] = useLocalStorage<string>("sidebarPosition", "right");
     const ref = useRef(null);
-    const classes = clsx("step-pane", {"left": props.type === "step" && sidebarPosition === "left"});
+    const classes = clsx("step-pane", {
+        "left": (
+            props.type === "step" && sidebarPosition === "left"
+        ) || (
+            props.type === "quest" && sidebarPosition === "right"
+        ),
+        [props.type]: true
+    });
 
     return (
         <Paper className={classes}>

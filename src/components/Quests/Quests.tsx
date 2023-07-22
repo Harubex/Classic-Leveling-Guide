@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useWowheadSearch from "./useWowheadSearch";
+import useWowheadSearch from "../../Templates/useWowheadSearch";
 import { Link } from "@mui/material";
 
 export interface Props {
