@@ -41,6 +41,19 @@
     display: flex;
 }
 
+.option-group {
+    padding-left: 0.5em;
+}
+
+div.input-small {
+    width: 45px;
+    padding-left: 0.5em;
+    & > div > input {
+        padding: 2px 5px;
+    }
+    
+}
+
 button.step-button {
     text-transform: none;
     text-align: left;

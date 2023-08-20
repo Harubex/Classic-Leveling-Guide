@@ -17,6 +17,7 @@ export const Map: React.FC<MapProps> = (props) => {
     const stepJson = useJson("step");
     const dangerJson = useJson("danger");
     const [center] = useLocalStorage<number[]>("currentMapCenter", [-485.125, 563.03125]);
+    const [displayAllSteps] = useLocalStorage<boolean>("displayAllSteps", false);
     const [selectedStep] = useStepSelected();
     const [showLines] = useLocalStorage<boolean>("showLines", true);
 
@@ -25,6 +26,7 @@ export const Map: React.FC<MapProps> = (props) => {
             index: stepNum - 1
         });
     };
+
 
     return (
         <MapContainer id="main-map" crs={CRS.Simple} center={center as LatLngExpression} zoom={5} scrollWheelZoom={true} zoomSnap={0} zoomDelta={0.25} minZoom={2} maxZoom={5}>
@@ -35,14 +37,19 @@ export const Map: React.FC<MapProps> = (props) => {
                 />
                 {stepJson.map((ele, i) => {
                     const coords = convertCoords(ele.coords);
+                    const nextCoords = stepJson.length - i > 1 ? convertCoords(stepJson[i + 1].coords) : coords.slice(coords.length - 2);
                     const hearth = ele.special === "hearth";
                     const prevHearth = stepJson[i - 1] ? stepJson[i - 1].special === "hearth" : false;
+                    const renderStep = displayAllSteps ? true : ele.step - selectedStep <= 10;
                     
-                    return ele.step >= selectedStep && (
+                    return renderStep && ele.step >= selectedStep && (
                         <div key={`marker-${i}`}>
                             <MapMarker onClick={onMarkerClick} hearth={prevHearth || hearth} step={ele.step} position={coords[0]} />
                             {(stepJson[i + 1] && showLines && !hearth) && (
-                                <MapLines special={ele.special} coords={coords} nextCoords={convertCoords(stepJson[i + 1].coords)} />
+                                <MapLines special={ele.special} coords={coords} nextCoords={nextCoords} />
+                            )}
+                            {!displayAllSteps && ele.step - selectedStep === 10 && (
+                                <MapMarker onClick={onMarkerClick} hearth={prevHearth || hearth} step={ele.step + 1} position={nextCoords[0]} />
                             )}
                         </div>
                     );

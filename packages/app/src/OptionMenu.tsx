@@ -3,6 +3,7 @@ import Fade from "@mui/material/Fade";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
+import TextField from "@mui/material/TextField";
 import Switch from "@mui/material/Switch";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
@@ -28,6 +29,7 @@ export const OptionMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const [showLines, setShowLines] = useLocalStorage<boolean>("showLines", true);
+    const [displayAllSteps, setDisplayAllSteps] = useLocalStorage<boolean>("displayAllSteps", false);
     const [hideQuestLog, setHideQuestLog] = useLocalStorage("hideQuestLog", false);
     const [sidebarPosition, setSidebarPosition] = useLocalStorage<string>("sidebarPosition", "right");
     const [autoFlyTo, setAutoFlyTo] = useLocalStorage<boolean>("autoFlyTo", true);
@@ -66,6 +68,10 @@ export const OptionMenu = () => {
         setAutoFlyTo(checked);
     };
 
+    const toggleDisplayAllSteps = (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
+        setDisplayAllSteps(checked);
+    };
+
     const positionStyle = (sidebarPosition === "left" ? { right: "1em" } : { left: "1em" }) as CSSProperties;
 
     return (
@@ -89,8 +95,12 @@ export const OptionMenu = () => {
                     <Switch color="secondary" checked={autoFlyTo} onChange={toggleAutoFlyTo} />
                 </MenuItem>
                 <MenuItem>
+                    <Typography>Display All Steps</Typography>
+                    <Switch color="secondary" checked={displayAllSteps} onChange={toggleDisplayAllSteps} />
+                </MenuItem>
+                <MenuItem>
                     <Typography>Sidebar Position</Typography>
-                    <ToggleButtonGroup color="secondary" size="small" exclusive onChange={sidebarPositionChanged} value={sidebarPosition}>
+                    <ToggleButtonGroup className={"option-group"} color="secondary" size="small" exclusive onChange={sidebarPositionChanged} value={sidebarPosition}>
                         <ToggleButton key={"left"} value={"left"}>
                             <FormatAlignLeftIcon />
                         </ToggleButton>
