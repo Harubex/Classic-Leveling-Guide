@@ -954,7 +954,7 @@
     "coords": [-504.93, 579.31]
 }, {
     "step": 222,
-    "text": "Turn in [@quest=Ink Supplies], [@quest=Return to Verner], and [@quest=Messenger to Stormwind]. Accept [@quest=Messenger to Westfall#143]. At the inn, turn in [@quest=Yorus Barleybrew] and [@quest=Dry Times]. Up the hill, turn in [@quest=Visit the Herbalist] and accept [@quest=Delivering Daffodils]. Turn in [@quest=Delivering Daffodils] at the inn. Fly back to Stormwind.",
+    "text": "Turn in [@quest=Ink Supplies], [@quest=Return to Verner], and [@quest=Messenger to Stormwind#121]. Accept [@quest=Messenger to Westfall#143]. At the inn, turn in [@quest=Yorus Barleybrew] and [@quest=Dry Times]. Up the hill, turn in [@quest=Visit the Herbalist] and accept [@quest=Delivering Daffodils]. Turn in [@quest=Delivering Daffodils] at the inn. Fly back to Stormwind.",
     "coords": [-495.98, 625.86],
     "special": "flight"
 }, {

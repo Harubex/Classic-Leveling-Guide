@@ -1891,7 +1891,7 @@
     },
     {
         "step": 222,
-        "text": "Turn in [@quest=Ink Supplies#345&Stormwind City&24], [@quest=Return to Verner#119&Redridge Mountains&18], and [@quest=Messenger to Stormwind#120&Redridge Mountains&14]. Accept [@quest=Messenger to Westfall#143&Redridge Mountains&14]. At the inn, turn in [@quest=Yorus Barleybrew#1698&Warrior&20] and [@quest=Dry Times#116&Redridge Mountains&15]. Up the hill, turn in [@quest=Visit the Herbalist#130&Redridge Mountains&15] and accept [@quest=Delivering Daffodils#131&Redridge Mountains&15]. Turn in [@quest=Delivering Daffodils#131&Redridge Mountains&15] at the inn. Fly back to Stormwind.",
+        "text": "Turn in [@quest=Ink Supplies#345&Stormwind City&24], [@quest=Return to Verner#119&Redridge Mountains&18], and [@quest=Messenger to Stormwind#121&Redridge Mountains&14]. Accept [@quest=Messenger to Westfall#143&Redridge Mountains&14]. At the inn, turn in [@quest=Yorus Barleybrew#1698&Warrior&20] and [@quest=Dry Times#116&Redridge Mountains&15]. Up the hill, turn in [@quest=Visit the Herbalist#130&Redridge Mountains&15] and accept [@quest=Delivering Daffodils#131&Redridge Mountains&15]. Turn in [@quest=Delivering Daffodils#131&Redridge Mountains&15] at the inn. Fly back to Stormwind.",
         "coords": [
             -495.98,
             625.86
