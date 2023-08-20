@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import 'leaflet/dist/leaflet.css';
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Accidental Presidency';
+    src: url('https://minecraft-map69.s3.us-east-2.amazonaws.com/Accidental+Presidency.ttf');
+}
+
+#option-menu-button {
+    background-color: #001D29cc;
+    color: rgba(248, 247, 241, 255);
+    position: absolute !important;
+    bottom: 1em;
+    & > svg {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
+
+#option-menu {
+    & * li {
+        padding: 0 0em 0 0.5em;
+    }
+}
+
+.quest-icon {
+    width: 1.5em;
+    height: 2em;
+    display: inline;
+}
+.quest-no-icon {
+    padding-left: 1.5em;
+}
+
+#root {
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+button.step-button {
+    text-transform: none;
+    text-align: left;
+    color: rgb(248, 247, 241);
+    padding: 0;
+}
+
+.leaflet-container {
+    height: 100vh;
+    width: 80%;
+    background: #001D29;
+}
+
+.leaflet-tooltip {
+    background-color: #222;
+    border: none;
+    font-family: 'Poppins';  
+    color: hsl(51, 33%, 96%);
+    font-size: 1em;
+    font-weight: 400;
+    &::before {
+        display: none;
+    }
+}
+
+.leaflet-interactive {
+    user-select: none !important;
+    outline: none !important;
+    pointer-events: none;
+}
+
+.questlog-header {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.leaflet-control-attribution, .leaflet-control-container {
+    display: none;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip, .copy-toast > div {
+    color: hsl(51, 33%, 96%);
+    font-family: 'Poppins';
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    border: none;
+    font-size: 1em;
+}
+
+.wowhead-tooltip-powered {
+    display: none !important;
+}
+
+.MuiTooltip-tooltip {
+    font-size: 1em !important;
+    font-family: monospace !important;
+    font-style: normal;
+    & > ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        & > li > * {
+            display: inline;
+        }
+    }
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2.5px;
+}
+
+.leaflet-div-icon {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.number-icon {
+    font-size: 1.5em;
+    position: relative;
+    bottom: 50%;
+    color: lighten(#C69B6D, 20%);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.hearth-icon > div {
+    color: #38d6ce;
+}
+
+.step-number {
+    color: #C69B6D; // class color coded
+    font-weight: 500;
+    display: inline;
+}
+
+.step-pane {
+    overflow: scroll;
+    border-image: url('https://minecraft-map69.s3.us-east-2.amazonaws.com/ui-dialogbox-divider.png') 8;
+    border-left: 8px solid;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    background-color: #222 !important;
+    padding: 3px 4px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.step-pane.left {
+    border-left: unset;
+    border-right: 8px solid;
+    //position: relative;
+    //right: 65%;
+    direction: rtl;
+}
+
+.step-pane.quest {
+    right: unset;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 25%;
+    user-select: none;
+}
+
+.quest-zone {
+    padding-bottom: 0.1em;
+    padding-left: 0.1em;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+li.zone-subheader {
+    color: hsl(51, 33%, 96%, 0.7);
+    font-size: 1.15em;
+    width: 100%;
+    background-color: unset;
+    line-height: 1.25em;
+    display: flex;
+    align-content: center;
+}
+
+.step-pane.step {
+    width: 40%;
+}
+
+.step-pane-inner {
+    direction: ltr;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 300;
+    color: hsl(51, 33%, 96%);
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.step-pane-list {
+    list-style: none;
+    padding: 1em;
+    & > li {
+        font-family: 'Poppins';
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        margin: 5px 0;
+    }
+}
+
+.quest-entry {
+    padding: 0 !important;
+    margin: 0.4em 0;
+}
+
+body {
+    background-color: #001D29;
+}

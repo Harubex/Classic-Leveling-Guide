@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/lerna.json",
+  "version": "1.0.0",
+  "npmClient": "pnpm"
+}

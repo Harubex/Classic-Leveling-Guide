@@ -1,15 +1,30 @@
 {
-    "editor.indentSize": "tabSize",
-    "editor.tabSize": 4,
-    "git.ignoreLimitWarning": true,
-    "workbench.sideBar.location": "left",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "tsconfig.*.json": true
-    }
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 4,
+  "git.ignoreLimitWarning": true,
+  "workbench.sideBar.location": "left",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/tsconfig.*.json": true,
+      "**/.gitignore": true,
+      "**/package-lock.json": true,
+      "**/pnpm-lock.yaml": true,
+      "**/pnpm-workspace.yaml": true,
+      "**/clg.code-workspace": true,
+      "**/node_modules": true
+  }
 }
