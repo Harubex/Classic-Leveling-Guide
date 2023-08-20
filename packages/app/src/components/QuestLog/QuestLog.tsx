@@ -57,7 +57,9 @@ const buildQuestLog = (questData: StepQuestInfo, currentStep: number): SteppedQu
                 }
             }
         }
-        stepLogs[currentStep] = questLog;
+        if (questLog.length > 0) {
+            stepLogs[currentStep] = questLog;
+        }
     }
     return stepLogs[currentStep];
 };

@@ -27,7 +27,7 @@ export default defineConfig(({ command, mode }) => {
         },
         plugins: [react(), viteStaticCopy({
             targets: [{
-                src: "./manifest.json",
+                src: "./manifest.webmanifest",
                 dest: "."
             }]
         })],
