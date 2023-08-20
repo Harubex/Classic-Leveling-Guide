@@ -8,7 +8,6 @@ export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd(), "");
     const isProd = env.NODE_ENV === "production";
     return {
-        base: "/classic-leveling-guide/",
         build: {
             minify: isProd ? "terser" : "esbuild",
             reportCompressedSize: true,
