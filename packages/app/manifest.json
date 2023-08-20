@@ -3,12 +3,12 @@
     "short_name": "CLG",
     "name": "Classic Leveling Guide",
     "icons": [{
-        "src": "/images/icons-vector.svg",
-        "type": "image/svg+xml",
+        "src": "https://minecraft-map69.s3.us-east-2.amazonaws.com/question-mark-512.png",
+        "type": "image/png",
         "sizes": "512x512"
     },
     {
-        "src": "/images/icons-192.png",
+        "src": "https://minecraft-map69.s3.us-east-2.amazonaws.com/question-mark-192.png",
         "type": "image/png",
         "sizes": "192x192"
     }],
