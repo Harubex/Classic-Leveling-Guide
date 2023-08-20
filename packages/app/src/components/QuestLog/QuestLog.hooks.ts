@@ -24,7 +24,7 @@ export const parseQuestSteps = (steps: StepData | StepData[]): StepQuestInfo => 
                 if (!stepQuests[keyName]) {
                     stepQuests[keyName] = questInfo;
                 } else {
-                    console.info(keyName)
+                    debug(keyName);
                 }
                 const closestState = minBy(stateIndices, (stateIndex) => {
                     const delta = questInfo.index! - stateIndex.index!;

@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import path from "path";
 import { defineConfig, loadEnv } from "vite";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
@@ -24,7 +25,12 @@ export default defineConfig(({ command, mode }) => {
             host: true,
             https: false
         },
-        plugins: [react()],
+        plugins: [react(), viteStaticCopy({
+            targets: [{
+                src: "./manifest.json",
+                dest: "."
+            }]
+        })],
         resolve: {
             alias: {
                 "@shared": path.resolve(__dirname, "../shared")
