@@ -9,13 +9,13 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:react-hooks/recommended",
+        "plugin:react-hooks/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": ["./tsconfig.json", "./tsconfig.eslint.json", "./tsconfig.node.json"],
+        "project": ["./packages/api/tsconfig.json", "./packages/app/tsconfig.json", "./packages/app/tsconfig.eslint.json", "./packages/app/tsconfig.node.json"]
     },
     "ignorePatterns": ["**/*.d.ts"],
     "plugins": ["react-refresh"],

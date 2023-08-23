@@ -45,3 +45,9 @@ export const convertCoords = (coords: number[] | number[][]) => {
     return (Array.isArray(coords[0]) ? coords : [coords]) as LatLngExpression[];
 };
 
+export const isDevelopment = () => {
+    if (!import.meta || !import.meta.env) {
+        return false;
+    }
+    return import.meta.env.MODE === "development"
+};

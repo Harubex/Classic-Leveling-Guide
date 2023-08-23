@@ -176,6 +176,7 @@ app.get("/step/:step", cors({ origin: "*" }), async (req, res) => {
 });
 
 const compileSteps = async (req: any, res?: Response) => {
+    console.log("Compile Steps")
     searchResults = JSON.parse((await fs.readFile("./cache.json", {encoding: "utf-8"})).toString());
     const steps: any = {};
     for (let i = 1; i <= stepData.length; i++) {
@@ -201,6 +202,11 @@ app.get("/steps", cors({ origin: "*" }), async (req, res) => {
     });
 });
 
-compileSteps(null);
+try {
+    compileSteps(null);
+} catch (err) {
+    console.error(err);
+}
+
 
 app.listen(6969, () => console.log(`Started on ${os.hostname()}:${6969}`));

@@ -1,16 +1,15 @@
-import useJson from "../../jsonRefs";
-import { parseQuestSteps } from "./QuestLog.hooks";
+import React from "react";
+import _ from "lodash";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import ListItemText from "@mui/material/ListItemText";
-import SidebarPane from "../SidebarPane/SidebarPane";
-import Quests from "../links/Quests";
-import _ from "lodash";
-import clsx from "clsx";
-import debug from "../../debugLog";
 
-type SteppedQuestInfo = QuestInfo & { step: number };
+import { parseQuestSteps } from "./QuestLog.hooks";
+import { QuestEntry, SteppedQuestInfo } from "./QuestEntry";
+import SidebarPane from "../SidebarPane/SidebarPane";
+import debug from "../../debugLog";
+import useJson from "../../jsonRefs";
 
 let completed: {[name: string]: number} = {};
 const stepLogs: SteppedQuestInfo[][] = [];
@@ -70,8 +69,8 @@ interface QuestLogProps {
 
 export const QuestLog: React.FC<QuestLogProps> = ({ step }) => {
     const json = useJson();
-    const questInfo = parseQuestSteps(json as StepData[]);
-    let stepLog = buildQuestLog(questInfo, step);
+    const questInfo = parseQuestSteps(json);
+    const stepLog = buildQuestLog(questInfo, step);
     const zonedStepLog: {[zoneName: string]: SteppedQuestInfo[]} = {};
 
     if (stepLog && stepLog.length > 0) {
@@ -108,14 +107,14 @@ export const QuestLog: React.FC<QuestLogProps> = ({ step }) => {
 
     const sortedZoneKeys = Object.keys(zonedStepLog);
     sortedZoneKeys.sort();
-    const getQuestClasses = (quest: SteppedQuestInfo) => {
-        return clsx({"quest-no-icon": !quest.completed && !(quest.accepted && quest.step === step)})
-    };
+    
+
     const coerceLevel = (level: string) => {
         return Number(level.replace(/D|R|E/gi, ""));
-    }
+    };
+
     const getQuestColor = (quest: SteppedQuestInfo): Color => {
-        const questLevel = coerceLevel(quest.level!)
+        const questLevel = coerceLevel(quest.level!);
         const averageLevel = Math.round(_.sumBy(stepLog, (q) => coerceLevel(q.level!)) / stepLog.length);
         const charLevel = averageLevel + Math.round(averageLevel / 10); // assuming that character level is 2 higher than avg quest level
         if (questLevel >= charLevel + 5) {
@@ -135,6 +134,7 @@ export const QuestLog: React.FC<QuestLogProps> = ({ step }) => {
         debug(quest.name, "Avg: " + averageLevel, "Quest: " + questLevel, "Char: " + charLevel, grayCutoff);
         return questColors.gray as Color;
     };
+
     return (
         <SidebarPane type="quest">
             <List disablePadding style={{width: "100%"}}>
@@ -151,35 +151,14 @@ export const QuestLog: React.FC<QuestLogProps> = ({ step }) => {
                     return (
                         <div className="quest-zone" key={"zone-" + i}>
                             <ListSubheader className="zone-subheader" disableGutters>{zoneName}</ListSubheader>
-                            {questList.map((quest, i) => (
-                                <ListItem key={i} className="quest-entry step-pane-list" disablePadding>
-                                    {(quest.accepted && quest.step === step) && (<QuestIcon type="accept" />)}
-                                    {quest.completed && <QuestIcon type="turnin" />}
-                                    <div className={getQuestClasses(quest)}>
-                                        <ListItemText primary={<Quests id={quest.id} color={getQuestColor(quest)}>{
-                                            (quest.level ? `[${quest.level}] ` : "") + quest.name
-                                        }</Quests>} />
-                                    </div>
-                                </ListItem>
+                            {questList.map((quest) => (
+                                <QuestEntry quest={quest} step={step} color={getQuestColor(quest)}  />
                             ))}
                         </div>
                     );
                 })}
             </List>
         </SidebarPane>
-    );
-};
-
-interface QuestIconProps {
-    type: "turnin" | "accept"
-}
-
-const QuestIcon: React.FC<QuestIconProps> = (props: QuestIconProps) => {
-    const src = `https://minecraft-map69.s3.us-east-2.amazonaws.com/quest_${props.type}.png`;
-    return (
-        <div className="quest-icon">
-            <img src={src} />
-        </div>
     );
 };
 

@@ -6,14 +6,21 @@ interface MapLinesProps {
     nextCoords: LatLngExpression[];
 }
 
-export const MapLines: React.FC<MapLinesProps> = (props) => {
+const lineColors: { [type: string]: Color } = {
+    default: "#000000",
+    flight: "#ee5522"
+};
 
-    
-    const flight = props.special === "flight";
+export const MapLines: React.FC<MapLinesProps> = ({ special, coords, nextCoords }) => {
+    const merged = coords.concat(nextCoords);
 
     return (
-        <Polyline color={flight ? "#ee552244" : "#00000044"} lineCap="round" positions={props.coords.concat(props.nextCoords)} />
+        <Polyline color={lineColors[special!]} opacity={0.4} lineCap="round" positions={merged} />
     );
-}
+};
+
+MapLines.defaultProps = {
+    special: "default"
+};
 
 export default MapLines;

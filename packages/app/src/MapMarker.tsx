@@ -9,7 +9,8 @@ import useStepSelected from "./useStepSelected";
 
 interface MapMarkerCommon {
     position: LatLngExpression;
-    hearth: boolean;
+    hearth?: boolean;
+    flight?: boolean;
     onClick: (step: number) => void;
 }
 interface WithStep extends MapMarkerCommon {
@@ -45,6 +46,9 @@ export const MapMarker: React.FC<MapMarkerProps> = (props: MapMarkerProps) => {
 
     if (props.hearth) {
         icon!.options.className = (icon?.options.className || "") + " hearth-icon"
+    }
+    if (props.flight) {
+        icon!.options.className = (icon?.options.className || "") + " flight-icon"
     }
 
     return (

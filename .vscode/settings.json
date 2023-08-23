@@ -20,11 +20,12 @@
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
       "**/tsconfig.*.json": true,
-      "**/.gitignore": true,
+      "**/.git*": true,
       "**/package-lock.json": true,
       "**/pnpm-lock.yaml": true,
       "**/pnpm-workspace.yaml": true,
       "**/clg.code-workspace": true,
-      "**/node_modules": true
+      "**/node_modules": true,
+      "**/dist": true
   }
 }

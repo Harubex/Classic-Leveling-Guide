@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
 import fs from "fs/promises";
-const browser = require("browserless")({headless: "new"});
+const browser = require("browserless")({ headless: "new" });
 
 export const getPageHtml = async (url: string) => {
     const browserless = await browser.createContext();

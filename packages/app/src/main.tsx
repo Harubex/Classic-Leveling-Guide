@@ -9,11 +9,11 @@ const addManifest = () => {
     manifestLink.rel = "manifest";
     manifestLink.href = "/manifest.webmanifest";
     document.head.appendChild(manifestLink);
-}
+};
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
 addManifest();

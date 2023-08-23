@@ -1038,114 +1038,182 @@
     "special": "flight"
 }, {
     "step": 241,
-    "text": "Turn in [@quest=Journey to Astranaar] and accept [@quest=The Zoram Strand]. Go accept [@quest=Raene's Cleansing#991]. Set your [@item=Hearthstone] to Astranaar while you're here. Go east along the road.",
-    "coords": [[-268.23, 153.04], [-273.02, 157.74], [-278.28, 159.10], [-276.85, 174.74], [-283.31, 195.17], [-291.93, 201.39], [-294.24, 209.37], [-309.88, 212.01]]
+    "text": "Turn in [@quest=Journey to Astranaar] and accept [@quest=The Zoram Strand]. Go accept [@quest=Raene's Cleansing#991]. Set your [@item=Hearthstone] to Astranaar while you're here. Go west along the road.",
+    "coords": [-268.23, 153.04]
 }, {
     "step": 242,
-    "text": "Continue down into The Barrens. Make sure to go through the gap in the wall next to the Mor'shan Rampart instead of the rampart itself. Once you enter the barrens, stay to the right of the road and go south towards Ratchet.",
-    "coords": [[-314.30, 214.49], [-330.23, 213.22], [-335.08, 221.47], [-350.29, 227.54], [-368.47, 229.42], [-378.55, 237.33], [-382.75, 245.87], [-380.67, 252.79]]
+    "text": "Accept [@quest=The Tower of Althalaxx#970] and [@quest=Bathran's Hair]. Kill any wolves you see if you still need [@item=Lean Wolf Flanks].",
+    "coords": [-258, 138.75]
 }, {
     "step": 243,
+    "text": "Turn in [@quest=Raene's Cleansing#991] and accept [@quest=Raene's Cleansing#1023]. Kill nearby murlocs until you get the [@item=Glowing Gem], then continue west to the Zoram Strand.",
+    "coords": [-261.01, 128.33]
+}, {
+    "step": 244,
+    "text": "Accept [@quest=The Ancient Statuette]. Go north, killing any naga you see. Loot the [@item=Ancient Statuette], then head back to [@mob=Talen]. Turn in [@quest=The Ancient Statuette], wait for the rp and accept [@quest=Ruuzel]. Head northwest to the island.",
+    "coords": [-248.34, 119.15]
+}, {
+    "step": 245,
+    "text": "Split pull [@mob=Ruuzel] away from her 2 cronies, keep her leashed and swim back to the other shore. Kill her, loot the ring. Go back to [@mob=Talen] and turn in [@quest=Ruuzel]. Finishing collecting heads, then head east.",
+    "coords": [-227.44, 105.24]
+}, {
+    "step": 246,
+    "text": "Collect [@item=Bathran's Hair] and a [@item=Glowing Soul Gem] from the cultists here, then go back south.",
+    "coords": [-239.56, 146.80]
+}, {
+    "step": 247,
+    "text": "Turn in [@quest=The Tower of Althalaxx#970] and [@quest=Bathran's Hair]. Accept [@quest=The Tower of Althalaxx#973] and [@quest=Orendil's Cure]. Head east on the road.",
+    "coords": [[-259, 138.75], [-267.17, 139.01]]
+}, {
+    "text": "Turn in [@quest=The Zoram Strand], [@quest=Raene's Cleansing#1023], and [@quest=Orendil's Cure]. Accept [@quest=Pridewings of Stonetalon], [@quest=Raene's Cleansing#1024], [@quest=An Aggressive Defense], and [@quest=Elune's Tear]. Head east.",
+    "coords": [[-270.42, 156.49], [-273.02, 157.74], [-278.28, 159.10], [-276.61, 173.96], [-279.34, 181.90]]
+}, {
+    "text": "Kill a few [@mob=Foulweald Totemics]/[@mob=Foulweald Warriors] while passing by if you feel like it. We won't finish this quest anytime soon, but killing some now helps to avoid waiting for spawns later. Head south.",
+    "coords": [-281.99, 182.64]
+}, {
+    "text": "Accept [@quest=Elemental Bracers], jump into the lake and pull [@mob=Befouled Water Elementals]. These mobs will [@move=Frost Nova] you, so make sure to pull them one at a time alone. They do physical damage, so [@move=Demoralizing Shout] is nice if you're in trouble. After you get enough [@item=Intact Elemental Bracers], use the [@item=Divining Scroll] in your bag and turn in [@quest=Elemental Bracers]. Accept [@quest=Mage Summoner].",
+    "coords": [-289.27, 179.81]
+}, {
+    "text": "Go back up to the road. Kill more furbolgs on your way out. Stay on the road down to The Barrens.",
+    "coords": [[-279.85, 186.03], [-283.31, 195.17], [-291.93, 201.39], [-294.24, 209.37], [-309.88, 212.01]]
+}, {
+    "text": "Make sure to go through the gap in the wall next to the Mor'shan Rampart instead of the rampart itself. Once you enter The Barrens, take the road to the nearby mountain. Climb it.",
+    "coords": [-314.30, 214.49]
+}, {
+    "text": "Kill [@mob=Sarilus Foulborne] at the peak. He likes to cast [@move=Sarilus's Elementals] and run around, so clear the low-level mobs nearby if you wanna be safe. When the [@mob=Minor Water Guardians] spawn from his spell, just [@move=Thunder Clap] them, they have 1 health. Collect his head, then make your way down.",
+    "coords": [-342.00, 212.73]
+}, {
+    "text": "Stay to the right of the road and go south towards Ratchet.",
+    "coords": [[-339.97, 223.11], [-350.29, 227.54], [-368.47, 229.42], [-378.55, 237.33]]
+}, {
     "text": "Accept [@quest=Raptor Horns] and [@quest=Deepmoss Spider Eggs]. Accept [@quest=Ziz Fizziks], pick up the flight point. Go south.",
     "coords": [[-380.09, 255.42], [-387.68, 243.03], [-397.36, 235.84]]
 }, {
-    "step": 244,
     "text": "Head down to the raptor haven and kill raptors until you have 5 [@item=Intact Raptor Horns]. Head back to Ratchet.",
     "coords": [[-410.54, 239.57], [-405.36, 243.76], [-405.28, 250.58], [-398.83, 254.61], [-386.58, 253.15]]
 }, {
-    "step": 245,
     "text": "Turn in [@quest=Raptor Horns]. Accept [@quest=Smart Drinks] and [@quest=Trouble at the Docks]. Head west to Stonetalon. Make sure to go through the burned outpost to the north.",
     "coords": [[-381.15, 255.42], [-382.08, 235.29], [-377.64, 207.81], [-377.18, 201.69], [-353.51, 186.15], [-359.43, 174.28], [-358.05, 165.32], [-343.97, 134.55]]
 }, {
-    "step": 246,
     "text": "Accept [@quest=A Gnome's Respite]. Go down to the nearby hut. Turn in [@quest=Ziz Fizziks] and accept [@quest=Super Reaper 6000].",
     "coords": [-329.28, 132.82]
 }, {
-    "step": 247,
     "text": "Kill [@mob=Venture Co. Loggers]/[@mob=Venture Co. Deforesters] and loot [@item=Deepmoss Eggs] in this zone. Go to the big shredder there and kill [@mob=Venture Co. Operators] until you find the [@item=Super Reaper 6000 Blueprints].",
     "coords": [-315.41, 138.44],
     "circle": 20
 }, {
-    "step": 248,
     "text": "Turn in [@quest=Super Reaper 6000], accept [@quest=Further Instructions].",
     "coords": [-325.61, 133.19]
 }, {
-    "step": 249,
     "text": "Turn in [@quest=A Gnome's Respite]. Accept [@quest=An Old Colleague] and [@quest=A Scroll from Mauren]. Go north.",
     "coords": [-330.19, 134.07]
 }, {
-    "step": 250,
+    "text": "Kill wyverns here for [@item=Pridewing Venom Sacs]. When you finish, continue north.",
+    "coords": [-305.50, 122.48]
+}, {
     "text": "Fly to Ratchet. Start looking for a Wailing Caverns group while you wait.",
     "coords": [-271.27, 100.57],
     "special": "flight"
 }, {
-    "step": 251,
     "text": "Turn in [@quest=Further Instructions] and [@quest=Deepmoss Spider Eggs]. When your group is ready, head to Wailing Caverns. Do some of the other quests or level [@skill=Fishing] until they're ready.",
     "coords": [-378.47, 256.85]
 }, {
-    "step": 252,
     "text": "Accept [@quest=Deviate Hides] and [@quest=Deviate Eradication] in the skull, then go inside. Kill [@mob=Mad Magglish] outside for the [@item=99-Year-Old Port], then go inside. Kill as many mobs outside as you can, the [@item=Deviate Hides] will be in short supply.",
     "coords": [-376.94, 205.41]
 }, {
-    "step": 253,
     "text": "Do Wailing Caverns. Accept [@quest=The Glowing Shard] from the [@item=Glowing Shard] off the last boss. Make sure to get as many [@item=Deviate Hides] and [@item=Serpentbloom] as you can. After you finish, farm the outside for any remaining hides if you're close, or just drop it if not. When you're done, go back up into the skull. Turn in [@quest=Deviate Hides] and [@quest=Deviate Eradication]. Go to Ratchet.",
     "coords": [-376.03, 205.51]
 }, {
-    "step": 254,
     "text": "Turn in [@quest=Smart Drinks] and [@quest=Trouble at the Docks], talk to [@mob=Sputtervalve] about the [@item=Glowing Shard]. Go back towards Wailing Caverns, but walk up the mountainside instead.",
     "coords": [-380.84, 257.07]
 }, {
-    "step": 255,
     "text": "Turn in [@quest=The Glowing Shard], accept [@quest=In Nightmares#3370]. Hearth back to Astranaar.",
     "coords": [-370.16, 212.32],
     "special": "hearth"
 }, {
-    "step": 256,
-    "text": "Vendor in Astranaar, then head west. Kill any wolves you see if you still need [@item=Lean Wolf Flanks].",
-    "coords": [-268.65, 153.73]
+    "text": "Arrive in Astranaar. Accept [@quest=Kayneth Stillwind]. Leave the town and go to the archways across the lake. Go up the path.",
+    "coords": [[-269.44, 156.94], [-270.56, 164.63], [-266.16, 167.38]]
 }, {
-    "step": 257,
-    "text": "Accept [@quest=The Tower of Althalaxx#970] and [@quest=Bathran's Hair].",
-    "coords": [-257.53, 139.04]
+    "text": "Collect one of the [@item=Elune's Tear] things laying around on the island. Go back down the path and go up the other one nearby.",
+    "coords": [[-265.09, 173.32], [-273.00, 169.23], [-277.03, 169.82], [-277.71, 178.40], [-265.54, 181.20]]
 }, {
-    "step": 258,
-    "text": "Turn in [@quest=Raene's Cleansing#991] and accept [@quest=Raene's Cleansing#1023]. Kill nearby murlocks until you get the [@item=Glowing Gem], then continue west to the Zoram Strand.",
-    "coords": [-261.01, 128.33]
+    "text": "Talk to [@mob=Shael'dryn] to turn in [@quest=Raene's Cleansing#1024]. Accept [@quest=Raene's Cleansing#1026], then go south.",
+    "coords": [-265.54, 184.95]
 }, {
-    "step": 259,
-    "text": "Accept [@quest=The Ancient Statuette]. Go north, killing any naga you see. Loot the [@item=Ancient Statuette], then head back to [@mob=Talen]. Turn in [@quest=The Ancient Statuette], wait for the rp and accept [@quest=Ruuzel]. Head northwest to the island.",
-    "coords": [-248.34, 119.15]
+    "text": "Turn in [@quest=Mage Summoner], make sure to keep [@item=Light of Elune] for a rainy day. Buy an [@item=Expert Cookbook] from [@mob=Shandrina] while you're here if you can train/afford it. Kill more furbolgs on your way back up to the road.",
+    "coords": [[-289.27, 179.87]]
 }, {
-    "step": 260,
-    "text": "Split pull [@mob=Ruuzel] away from her 2 cronies, keep her leashed and swim back to the other shore. Kill her, loot the ring. Go back to [@mob=Talen] and turn in [@quest=Ruuzel]. Finishing collecting heads, then head east.",
-    "coords": [-227.44, 105.24]
+    "text": "This run is a little treacherous, pay attention to the route. Watch for the [@mob=Warsong Outrider] on the road. Be in [@move=Defensive Stance] running unless you need to fight a mob. Keep going east until you get to Night Song.",
+    "coords": [[-280.55, 188.09], [-282.57, 194.32], [-291.78, 201.31], [-294.03, 208.93], [-299.74, 210.04], [-300.25, 215.66], [-298.55, 222.05], [-295.18, 228.01], [-290.59, 229.48], [-286.13, 228.79], [-281.75, 229.47], [-277.81, 230.38], [-275.66, 232.54], [-271.37, 237.97], [-270.25, 240.10], [-269.81, 242.48], [-265.81, 242.10]]
 }, {
-    "step": 261,
-    "text": "Collect [@item=Bathran's Hair] and a [@item=Glowing Soul Gem] from the cultists here, then go back south.",
-    "coords": [-239.56, 146.80]
-}, {
-    "step": 262,
-    "text": "Turn in [@quest=The Tower of Althalaxx#970] and [@quest=Bathran's Hair]. Accept [@quest=The Tower of Althalaxx#973] and [@quest=Orendil's Cure].",
-    "coords": [-259.22, 139.01]
-}, {
-    "step": 263,
-    "text": "Turn in [@quest=The Zoram Strand], [@quest=Raene's Cleansing#1023], and [@quest=Orendil's Cure]. Accept [@quest=Pridewings of Stonetalon], [@quest=Kayneth Stillwind], [@quest=Raene's Cleansing#1024], [@quest=An Aggressive Defense], and [@quest=Elune's Tear]. Head east.",
-    "coords": [-269.87, 155.08]
-}, {
-    "step": 264,
-    "text": "Go up the path and collect one of the [@item=Elune's Tear] things laying around on the island.",
-    "coords": [[-277.59, 169.43], [-265.14, 173.31]]
-}, {
-    "step": 265,
-    "text": "Go back down the path and go up the other one nearby. Talk to [@mob=Shael'dryn] to turn in [@quest=Raene's Cleansing#1024]. Accept [@quest=Raene's Cleansing#1026], then go east.",
-    "coords": [[-278.74, 181.44], [-265.54, 184.95]]
-}, {
-    "text": "Kill a few [@mob=Foulweald Totemics]/[@mob=Foulweald Warriors] while passing by if you feel like it. We won't finish this quest anytime soon, but killing some now helps to avoid waiting for spawns later. Keep heading east.",
-    "coords": [-281.56, 184.98]
-}, {
-    "text": "This run is a little treacherous, pay attention to the route. Watch for the [@mob=Warsong Outrider] on the road. Be in [@move=Defensive Stance] running unless you need to fight a green mob. Keep going east until you get to Night Song, then turn in [@quest=Kayneth Stillwind]. Continue southeast into Azshara.",
-    "coords": [[-282.45, 193.98], [-291.78, 201.31], [-294.03, 208.93], [-299.74, 210.04], [-300.25, 215.66], [-298.55, 222.05], [-295.18, 228.01], [-290.59, 229.48], [-286.13, 228.79], [-281.75, 229.47], [-277.81, 230.38], [-275.66, 232.54], [-271.37, 237.97], [-270.25, 240.10], [-269.81, 242.48], [-265.81, 242.10]]
-}, {
-    "text": "Grab the flight point, then fly back to Astranaar. Pat yourself on the back while you fly back.",
+    "text": "Turn in [@quest=Kayneth Stillwind]. Continue southeast into Azshara. Grab the flight point.",
     "coords": [[-262.88, 240.29], [-265.88, 242.88], [-269.47, 244.23], [-266.00, 249.60], [-265.50, 251.10], [-265.44, 253.63], [-266.66, 256.48], [-268.78, 259.82], [-271.44, 260.11]]
+}, {
+    "text": "Fly back to Astranaar. Turn in [@quest=Pridewings of Stonetalon]. Pat yourself on the back while flying.",
+    "coords": [-271.44, 260.11],
+    "special": "flight"
+}, {
+    "text": "Turn in [@quest=Elune's Tear], accept [@quest=The Ruins of Stardust]. Go south.",
+    "coords": [-271.82, 157.95]
+}, {
+    "text": "Loot the [@item=Handful of Stardust] from bushes here. Leave the area and go next door.",
+    "coords": [-289.78, 150.81]
+}, {
+    "text": "Kill demons and work your way up to the hill where [@mob=Ilkrud Magthrull] is. Focus him down, interrupt [@move=Ilkrud's Guardians] when he casts it. It's a 5 second cast and he'll do it at low health, so have a bomb or [@move=Shield Bash] ready. If you can't interrupt it, just kill him and reset the voidwalkers that spawn. Take his book and go back to Astranaar.",
+    "coords": [-281.66, 136.94]
+}, {
+    "text": "Turn in [@quest=The Ruins of Stardust]. Skip the follow-up for now. Go up the road towards Darkshore.",
+    "coords": [-271.43, 155.90]
+}, {
+    "text": "Turn in [@quest=The Tower of Althalaxx#973], accept [@quest=The Tower of Althalaxx#1140]. Continue north to Darkshore. Go through the side path to get to the shore quicker. Collect the next 4 quests from the skeletons.",
+    "coords": [[-257.26, 138.91], [-247.53, 129.74], [-239.73, 125.32], [-232.78, 126.67], [-225.58, 130.30], [-219.40, 126.08]]
+}, {
+    "text": "Fight off the murlocs here and accept [@quest=Beached Sea Creature#4733].",
+    "coords": [-216.66, 117.25]
+}, {
+    "text": "Kill murlocs, accept [@quest=Beached Sea Turtle#4732]. Go north to Auberdine.",
+    "coords": [-214.03, 116.85]
+}, {
+    "text": "Turn in [@quest=Beached Sea Turtle#4732] and [@quest=Beached Sea Creature#4733] to [@mob=Gwennyth Bly'Leggonde]. Fly to Darnassus.",
+    "coords": [-161.77, 127.42]
+}, {
+    "text": "Turn in [@quest=In Nightmares#3370]. Auction and vendor. If you're 24 and haven't trained yet, learn [@move=Execute#5308] and [@move=Heroic Strike#1608]. Fly back to Auberdine and take the boat to Menethil.",
+    "coords": [-47.014, 66.820]
+}, {
+    "text": "Accept [@quest=Claws from the Deep] and [@quest=Young Crocolisk Skins], then go to the inn. Accept [@quest=The Greenwarden] and [@quest=Digging through the Ooze]. Set your [@item=Hearthstone] to Menethil, then head out.",
+    "coords": [-332.53, 583.15]
+}, {
+    "text": "Kill [@mob=Black Oozes] around here until you find [@item=Sida's Bag]. Kill [@mob=Young Wetlands Crocolisks] in the area.",
+    "coords": [-326.73, 597.07]
+}, {
+    "text": "Kill [@mob=Gobbler] and his murloc friends. Take his head and continue east.",
+    "coords": [-314.67, 589.42]
+}, {
+    "text": "Kill any [@mob=Young Wetlands Crocolisks] you see while taking the road east. Stay and farm a bit here if you still need some [@item=Young Crocolisk Skins].",
+    "coords": [-314.62, 632.56]
+}, {
+    "text": "Turn in [@quest=The Greenwarden], accept [@quest=Tramping Paws]. Go southeast.",
+    "coords": [-316.50, 639.35]
+}, {
+    "text": "Kill all the [@mob=Mosshide Gnolls] and [@mob=Mosshide Mongrels] you see, then go into the cave to the west.",
+    "coords": [-330.95, 645.61]
+}, {
+    "text": "Mine the incendicite nodes until you have 6 [@item=Incendicite Ore], save these for later. If you don't have 6 [@item=Gooey Spider Legs] yet, kill spiders here to get the last few. Leave and head north. If you still need gnolls, finish them beforehand.",
+    "coords": [-334.51, 634.36]
+}, {
+    "text": "Turn in [@quest=Tramping Paws], accept [@quest=Fire Taboo]. Head back to Menethil, killing gnolls on the way for [@item=Crude Flint]. Don't worry about finishing this for now.",
+    "coords": [-315.50, 639.35]
+}, {
+    "text": "Turn in [@quest=Digging through the Ooze], [@quest=Claws from the Deep], and [@quest=Young Crocolisk Skins]. Fly to Ironforge.",
+    "coords": [-328.93, 579.64],
+    "special": "flight"
+}, {
+    "text": "Land in Ironforge. Go turn in [@quest=An Old Colleague#1072] and accept [@quest=Ineptitude + Chemicals = Fun#1073]. This quest requires you to find 4 [@item=Minor Mana Potions] and 2 [@item=Elixir of Minor Fortitude]. At some point, talk to an Alchemist or buy them off the auction house, they should be cheap. You could skip this in theory but it opens up a ridiculous number of quests down the line. Either way, don't worry too much about it for now.",
+    "coords": [-364.44, 593.78]
+}, {
+    "text": "Accept [@quest=Stonegear's Search], leave Ironforge.",
+    "coords": [-369.69, 593.91]
+}, {
+    "text": "Turn in [@quest=Stonegear's Search], accept [@quest=Search for Incendicite]. Turn in [@quest=Search for Incendicite] now since you already have the ore. Go back to Ironforge.",
+    "coords": [-383.19, 577.26]
 }]
