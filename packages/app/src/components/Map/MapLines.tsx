@@ -1,4 +1,4 @@
-import { LatLngExpression } from "leaflet";
+import type { LatLngExpression } from "leaflet";
 import { Polyline } from "react-leaflet";
 interface MapLinesProps {
     special?: string;

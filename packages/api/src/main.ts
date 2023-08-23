@@ -66,7 +66,8 @@ const search = async (query: string, typeName: TypeName) => {
 
 const exclusionList = ["Guard Thomas", 
 "Beer Basted Boar Ribs", "Princess", "Wendigo Hides", "Handful of Oats", "Super Reaper 6000 Blueprints",
-"Boar Intestines", "Fine Crab Chunks", "Sea Creature Bones", "Sea Turtle Remains", "Xabraxxis", "Hops", "Stitches"];
+"Boar Intestines", "Fine Crab Chunks", "Sea Creature Bones", "Sea Turtle Remains", "Xabraxxis", "Hops", "Stitches",
+"Stormwind Seasoning Herbs"];
 
 const exceptions: any = {
    /* "Princess": {

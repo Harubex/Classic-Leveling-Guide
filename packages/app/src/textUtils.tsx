@@ -1,6 +1,6 @@
 import regex from "@shared/regex";
 import { Quests, Mobs, Moves, Money, Items, Skills, TemplateProps } from "./components/links";
-import { LatLngExpression } from "leaflet";
+import type { LatLngExpression } from "leaflet";
 
 const templates: {[name: string]: React.FC<TemplateProps>} = {
     quest: Quests,
@@ -8,10 +8,10 @@ const templates: {[name: string]: React.FC<TemplateProps>} = {
     spell: Moves,
     skill: Skills,
     item: Items,
-}
+};
 
 export const transposeTextEntities = (text: string = ""): React.ReactNode[] => {
-    let chunks: React.ReactNode[] = [];
+    const chunks: React.ReactNode[] = [];
     let lastMatchIndex = 0;
     for (const match of text.matchAll(regex.renamedEntityMatches)) {
         const [matchedText, templateType, templateText, templateId] = match;
@@ -22,6 +22,7 @@ export const transposeTextEntities = (text: string = ""): React.ReactNode[] => {
                 chunks.push(<Money>{templateText}</Money>);
                 break;
             default:
+                // eslint-disable-next-line no-case-declarations
                 const Element = templates[templateType];
                 if (Element) {
                     chunks.push(
@@ -49,5 +50,5 @@ export const isDevelopment = () => {
     if (!import.meta || !import.meta.env) {
         return false;
     }
-    return import.meta.env.MODE === "development"
+    return import.meta.env.MODE === "development";
 };

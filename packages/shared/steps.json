@@ -1186,7 +1186,7 @@
     "text": "Kill [@mob=Black Oozes] around here until you find [@item=Sida's Bag]. Kill [@mob=Young Wetlands Crocolisks] in the area.",
     "coords": [-326.73, 597.07]
 }, {
-    "text": "Kill [@mob=Gobbler] and his murloc friends. Take his head and continue east.",
+    "text": "Kill [@mob=Gobbler] and his murloc friends. Save any [@item=Murloc Fins] you find. Take his head and continue east.",
     "coords": [-314.67, 589.42]
 }, {
     "text": "Kill any [@mob=Young Wetlands Crocolisks] you see while taking the road east. Stay and farm a bit here if you still need some [@item=Young Crocolisk Skins].",
@@ -1214,6 +1214,19 @@
     "text": "Accept [@quest=Stonegear's Search], leave Ironforge.",
     "coords": [-369.69, 593.91]
 }, {
-    "text": "Turn in [@quest=Stonegear's Search], accept [@quest=Search for Incendicite]. Turn in [@quest=Search for Incendicite] now since you already have the ore. Go back to Ironforge.",
+    "text": "Turn in [@quest=Stonegear's Search], accept [@quest=Search for Incendicite]. Turn in [@quest=Search for Incendicite] now since you already have the ore. Go back to Ironforge, take the tram to Stormwind.",
     "coords": [-383.19, 577.26]
+}, {
+    "text": "Buy some [@item=Stormwind Seasoning Herbs] for later.",
+    "coords": [-481.53, 541.93]
+}, {
+    "text": "Turn in [@quest=A Scroll from Mauren], accept [@quest=Devils in Westfall]. If you don't have a [@item=Bronze Tube], make it or buy one off the auction house. Fly to Redridge.",
+    "coords": [-487.99, 534.03],
+    "special": "flight"
+}, {
+    "text": "Accept [@quest=Blackrock Menace], [@quest=A Baying of Gnolls], and [@quest=Underbelly Scales]. Go into town, accept [@quest=Selling Fish] and [@quest=Murloc Poachers]. Turn in [@quest=Messenger to Westfall#144] finally.",
+    "coords": [-495.88, 626.53]
+}, {
+    "text": "Kill murlocs around the lake until you have 8 [@item=Murloc Fins] and 10 [@item=Spotted Sunfish]. You can also get the sunfish with fishing, if you want to level your [@skill=Fishing] skill.",
+    "coords": [-495.19, 631.35]
 }]

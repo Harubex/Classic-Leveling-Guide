@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 import path from "path";
-import { defineConfig, loadEnv } from "vite";
+import { defineConfig, loadEnv, splitVendorChunkPlugin } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import react from "@vitejs/plugin-react-swc";
 
@@ -11,15 +11,7 @@ export default defineConfig(({ mode }) => {
     return {
         build: {
             minify: isProd ? "terser" : "esbuild",
-            reportCompressedSize: true,
-            rollupOptions: {
-                manualChunks(id: string) {
-                    if (id.includes(".json")) {
-                        return id.split(".json")[0].split("/").pop();
-                    }
-                }
-            }
-            
+            reportCompressedSize: true            
         },
         preview: {
             host: true,
@@ -30,7 +22,7 @@ export default defineConfig(({ mode }) => {
                 src: "./manifest.webmanifest",
                 dest: "."
             }]
-        })],
+        }), splitVendorChunkPlugin()],
         resolve: {
             alias: {
                 "@shared": path.resolve(__dirname, "../shared")

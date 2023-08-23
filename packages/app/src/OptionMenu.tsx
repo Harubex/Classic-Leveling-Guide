@@ -16,9 +16,9 @@ const useMousePosition = () => {
     const [mousePos, setMousePos] = useState<number[]>([0, 0]);
     document.onmousemove = (ev) => {
         setMousePos([ev.pageX, ev.pageY]);
-    }
+    };
     return mousePos;
-}
+};
 
 let lastMousePos = [0, 0];
 let lastTimeoutId = 0;
@@ -53,11 +53,11 @@ export const OptionMenu = () => {
 
     const showLinesChanged = (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
         setShowLines(checked);
-    }
+    };
 
     const toggleQuestLog = (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
         setHideQuestLog(!checked);
-    }
+    };
 
     const sidebarPositionChanged = (_: React.MouseEvent<HTMLElement, MouseEvent>, value: "left" | "right") => {
         setSidebarPosition(value);

@@ -19,7 +19,7 @@ const questColors = {
     green: "#0db80d",
     yellow: "#ebeb05",
     orange: "#de7102",
-    red: "#e30707",
+    red: "#e30707"
 };
 
 const buildQuestLog = (questData: StepQuestInfo, currentStep: number): SteppedQuestInfo[] => {

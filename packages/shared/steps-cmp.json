@@ -2838,7 +2838,7 @@
         "step": 286
     },
     {
-        "text": "Kill [@npc=Gobbler#1259] and his murloc friends. Take his head and continue east.",
+        "text": "Kill [@npc=Gobbler#1259] and his murloc friends. Save any [@item=Murloc Fins#1468] you find. Take his head and continue east.",
         "coords": [
             -314.67,
             589.42
@@ -2911,11 +2911,44 @@
         "step": 295
     },
     {
-        "text": "Turn in [@quest=Stonegear's Search#467&Dun Morogh&23], accept [@quest=Search for Incendicite#466&Dun Morogh&22]. Turn in [@quest=Search for Incendicite#466&Dun Morogh&22] now since you already have the ore. Go back to Ironforge.",
+        "text": "Turn in [@quest=Stonegear's Search#467&Dun Morogh&23], accept [@quest=Search for Incendicite#466&Dun Morogh&22]. Turn in [@quest=Search for Incendicite#466&Dun Morogh&22] now since you already have the ore. Go back to Ironforge, take the tram to Stormwind.",
         "coords": [
             -383.19,
             577.26
         ],
         "step": 296
+    },
+    {
+        "text": "Buy some [@item=Stormwind Seasoning Herbs#2665] for later.",
+        "coords": [
+            -481.53,
+            541.93
+        ],
+        "step": 297
+    },
+    {
+        "text": "Turn in [@quest=A Scroll from Mauren#1075&Stonetalon Mountains&21], accept [@quest=Devils in Westfall#1076&Stonetalon Mountains&21]. If you don't have a [@item=Bronze Tube#4371], make it or buy one off the auction house. Fly to Redridge.",
+        "coords": [
+            -487.99,
+            534.03
+        ],
+        "special": "flight",
+        "step": 298
+    },
+    {
+        "text": "Accept [@quest=Blackrock Menace#20&Redridge Mountains&21], [@quest=A Baying of Gnolls#124&Redridge Mountains&20], and [@quest=Underbelly Scales#122&Redridge Mountains&18]. Go into town, accept [@quest=Selling Fish#127&Redridge Mountains&21] and [@quest=Murloc Poachers#150&Redridge Mountains&20]. Turn in [@quest=Messenger to Westfall#144&Redridge Mountains&14] finally.",
+        "coords": [
+            -495.88,
+            626.53
+        ],
+        "step": 299
+    },
+    {
+        "text": "Kill murlocs around the lake until you have 8 [@item=Murloc Fins#1468] and 10 [@item=Spotted Sunfish#1467]. You can also get the sunfish with fishing, if you want to level your [@skill=Fishing#356] skill.",
+        "coords": [
+            -495.19,
+            631.35
+        ],
+        "step": 300
     }
 ]

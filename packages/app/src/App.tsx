@@ -1,7 +1,6 @@
-import { useRef } from "react";
+import { lazy, useRef } from "react";
 import createTheme from "@mui/material/styles/createTheme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import Map from "./Map";
 import StepPane from "./StepPane";
 import CssBaseline from "@mui/material/CssBaseline";
 import OptionMenu from "./OptionMenu";
@@ -9,6 +8,8 @@ import { SelectedStepContext } from "./context";
 import useLocalStorage from "use-local-storage";
 import QuestLog from "./components/QuestLog/QuestLog";
 import { ViewportListRef } from "react-viewport-list";
+
+const Map = lazy(() => import("./components/Map"));
 
 const theme = createTheme({
     palette: {
@@ -45,6 +46,6 @@ export const App: React.FC = () => {
             <CssBaseline enableColorScheme />
         </ThemeProvider>
     );
-}
+};
 
 export default App;

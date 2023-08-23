@@ -13,7 +13,7 @@ import Macro from "./Macro";
 import useLocalStorage from "use-local-storage";
 import { convertCoords, transposeTextEntities } from "./textUtils";
 import { Step } from "./components/links";
-import { LatLngExpression } from "leaflet";
+import type { LatLngExpression } from "leaflet";
 import useStepSelected from "./useStepSelected";
 
 interface StepData {
@@ -64,7 +64,7 @@ export const StepList: React.FC<StepListProps> = (props: StepListProps) => {
         return (
             <StepListRow key={stepData.step} step={stepData} onStepSelected={onStepSelected} />
         );
-    }
+    };
     
     return (
         <List>
@@ -81,7 +81,7 @@ interface StepListRowProps {
 }
 
 const StepListRow: React.FC<StepListRowProps> = ({ step, onStepSelected }) => {
-   /* const [{ data, loading, error }] = useAxios<StepData>(`http://127.0.0.1:6969/step/${stepNum-5}/${stepNum+5}`);
+    /* const [{ data, loading, error }] = useAxios<StepData>(`http://127.0.0.1:6969/step/${stepNum-5}/${stepNum+5}`);
     if (error) {
         console.error(error);
         return <div>{JSON.stringify(error)}</div>;
@@ -102,9 +102,9 @@ const StepListRow: React.FC<StepListRowProps> = ({ step, onStepSelected }) => {
                         </React.Fragment>
                     ))} />
                 </Button>
-                {step!.macros && (
+                {step.macros && (
                     <ButtonGroup style={{justifyContent: "center", marginTop: "0.5em"}}>
-                        {step!.macros.map((macro) => (
+                        {step.macros.map((macro) => (
                             <Macro key={macro.title} name={macro.title}>{macro.text}</Macro>
                         ))}
                     </ButtonGroup>
